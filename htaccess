@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: .htaccess
+---
+RewriteRule (.+)\.html$ /$1/ [L,R=301]
