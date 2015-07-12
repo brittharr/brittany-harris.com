@@ -2,6 +2,7 @@
 layout: page
 title: Hospital Cafe
 permalink: /projects/hospital-cafe/
+redirect_from: /projects/hospital-cafe.html
 ---
 ## Hospital Cafe
 

@@ -1,0 +1,5 @@
+@include component(page) {
+    @include option(cv) {
+        color: red;
+    }
+}

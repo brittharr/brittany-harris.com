@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Water Use & Country Size
-permalink: /projects/raytracer/
+permalink: /projects/water-use/
+redirect_from: /projects/water-use.html
 ---
 ## Water Use & Country Size
 

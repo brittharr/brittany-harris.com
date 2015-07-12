@@ -2,6 +2,7 @@
 layout: page
 title: Ray Tracer
 permalink: /projects/raytracer/
+redirect_from: /projects/raytracer.html
 ---
 ## Ray Tracer
 
