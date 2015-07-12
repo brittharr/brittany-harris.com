@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Pod Hotel
-permalink: /projects/pod-hotel/
 redirect_from: /projects/pod-hotel.html
 ---
 ## Pod Hotel

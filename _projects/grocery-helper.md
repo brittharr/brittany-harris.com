@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Grocery Helper
-permalink: /projects/grocery-helper/
 redirect_from: /projects/grocery-helper.html
 ---
 ## Grocery Helper

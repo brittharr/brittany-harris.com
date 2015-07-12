@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Image Processor
-permalink: /projects/image-processor/
 redirect_from: /projects/image-processor.html
 ---
 ## Image Processor

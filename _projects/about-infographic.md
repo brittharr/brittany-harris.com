@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About Me Infographic
-permalink: /projects/about-infographic/
 redirect_from: /projects/about-infographic.html
 ---
 ## About Me Infographic

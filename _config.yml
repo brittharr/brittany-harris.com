@@ -11,6 +11,14 @@ instagram_username: brittharr_
 linkedin_username:  brittany-harris/30/1b5/7a8
 version: 2.0.0
 
+collections:
+  case-studies:
+    output: true
+    permalink: /case-studies/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # Build settings
 markdown: kramdown
 

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Vicenza Sketchbook
-permalink: /projects/vicenza/
 redirect_from: /projects/vicenza.html
 ---
 ## Vicenza Sketchbook
