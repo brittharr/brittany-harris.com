@@ -41,8 +41,8 @@
 /**
  * #SETTINGS
  */
-@import "settings.global";
-@import "settings.colors";
+// @import "settings.global";
+// @import "settings.colors";
 // @import "settings.responsive";
 
 
@@ -52,10 +52,11 @@
 /**
  * #TOOLS
  */
+@import "../_bower_components/foundation/scss/normalize";
+@import "../_bower_components/foundation/scss/foundation";
 // @import "tools.mixins";
 @import "tools.responsive";
-@import "../bower_components/foundation/scss/foundation";
-@import "../bower_components/csstyle/csstyle";
+@import "../_bower_components/csstyle/csstyle";
 
 
 
@@ -64,7 +65,6 @@
 /**
  * #GENERIC
  */
-@import "../bower_components/foundation/scss/normalize";
 
 
 
@@ -89,7 +89,7 @@
 /**
  * #COMPONENTS
  */
-@import "components.cv";
+// @import "components.cv";
 
 
 
@@ -100,8 +100,19 @@
  */
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+// @import
+        // "base",
+        // "layout",
+        // "syntax-highlighting"
+// ;
+body {
+    font-family: 'aktiv-grotesk', sans-serif;
+}
+html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: 20px solid #a900fa;
+}

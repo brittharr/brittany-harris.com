@@ -1,37 +1,44 @@
 ---
 layout: default
 permalink: /
-redirect_from: /projects.html
+class: --home
+redirect_from:
+ - /projects.html
+ - /about.html
+ - /contact.html
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Case Studies</h1>
-
-  <ul class="post-list">
-    {% for page in site.case-studies %}
-      <li>
-
-        <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Additional Work</h1>
-
-  <ul class="post-list">
-    {% for page in site.projects %}
-      <li>
-
-        <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="row">
+  <div class="medium-2 medium-offset-2 columns"><h2>Work</h2></div>
+  <div class="medium-8 columns">
+    <ul class="medium-block-grid-3">
+      {% for page in site.work %}
+      <li><a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
+<div class="row">
+  <div class="medium-2 medium-offset-2 columns"><h2>Story</h2></div>
+  <div class="medium-8 columns">
+    <p>By day, I'm a developer at <a href="http://www.boostlabs.com">Boost Labs</a>. By night, I'm a developer in, well, my living room.
+    <p>Through my architectural design curriculum and other artistic pursuits, I've learned how to design physical and virtual spaces that afford many kinds of information flows. There's some implicit psychology in architecture that I've always found very interesting&mdash;an understanding of which is necessary for directing a person's interaction with constructions or diagrams. I feel that these experiences translate well to UX/UI, where I can design human-computer interactions.</p>
+    <p>When not analyzing usability and hypothesizing how to make the world a place that makes more sense, I participate in a number of activities to relax. I've been very involved with the Ballroom Dance Club at the University of Virginia, both as a competitive dancer and administratively as club Secretary then President.</p>
+    <p>Feel free to contact me with any questions!</p>
+  </div>
+</div>
+<div class="row">
+  <div class="medium-2 medium-offset-2 columns"><h2>Thoughts</h2></div>
+  <div class="medium-8 columns">
+    <ul class="medium-block-grid-3">
+      {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="medium-2 medium-offset-2 columns"><a href="/cv/"><h2>Resume</h2></a></div>
+  <div class="medium-8 columns">
+  </div>
+</div>
+

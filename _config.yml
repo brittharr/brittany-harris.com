@@ -13,9 +13,9 @@ version: 2.0.0
 permalink: /blog/:year/:month/:day/:title/
 
 collections:
-  case-studies:
+  work:
     output: true
-    permalink: /case-studies/:path/
+    permalink: /work/:path/
   projects:
     output: true
     permalink: /projects/:path/

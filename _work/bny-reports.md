@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Automated Reports for BNY Mellon
+title: Automated Reports
 ---
-## Automated Reports
+## Automated Reports for BNY Mellon
 
 [BNY Mellon](https://www.bnymellon.com/) conducts an investor relations survey each year among 700 participants representing companies from 63 nations. This survey covers key emerging trends in today’s capital markets. They approached [Boost Labs](http://www.boostlabs.com/) with a ton of survey data, and were looking for our help to find meaning in the data and visualize it in a series of reports.
 
