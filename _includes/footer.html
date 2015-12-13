@@ -1,28 +1,32 @@
 <footer class="site-footer">
   <div class="row">
-    <div class="small-2 small-offset-2 columns">
+    <div class="medium-8 medium-offset-4 columns">
       <ul class="social-media-list">
+        <li>
+          <a href="{{ "/cv/brittanyharris-resume.pdf" | prepend: site.baseurl }}" target="_blank" class="fa fa-file-text" title="Resume"></a>
+        </li>
+
         {% if site.github_username %}
         <li>
-          <a href="https://github.com/{{ site.github_username }}">Github</a>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" class="fa fa-github fa-lg" title="Github"></a>
         </li>
         {% endif %}
 
         {% if site.twitter_username %}
         <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-        </li>
-        {% endif %}
-
-        {% if site.instagram_username %}
-        <li>
-          <a href="https://instagram.com/{{ site.instagram_username }}">Instgram</a>
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="fa fa-twitter fa-lg" title="Twitter"></a>
         </li>
         {% endif %}
 
         {% if site.linkedin_username %}
         <li>
-          <a href="https://linkedin.com/pub/{{ site.linkedin_username }}">Linkedin</a>
+          <a href="https://linkedin.com/pub/{{ site.linkedin_username }}" target="_blank" class="fa fa-linkedin-square fa-lg" title="Linkedin"></a>
+        </li>
+        {% endif %}
+
+        {% if site.instagram_username %}
+        <li>
+          <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" class="fa fa-instagram fa-lg" title="Instagram"></a>
         </li>
         {% endif %}
       </ul>

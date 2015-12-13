@@ -1,6 +1,6 @@
 # Site settings
 title: Brittany Harris
-email: bjh3ev@virginia.edu
+email: hello@brittany-harris.com
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -23,6 +23,8 @@ collections:
 # Build settings
 markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+exclude: ['node_modules']
 
 redcarpet:
   extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "highlight", "footnotes", "smart"]

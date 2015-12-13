@@ -8,7 +8,7 @@ redirect_from:
  - /contact.html
 ---
 <div class="row">
-  <div class="medium-2 medium-offset-2 columns"><h2>Work</h2></div>
+  <div class="medium-3 medium-offset-1 columns column-label"><h2>Work</h2></div>
   <div class="medium-8 columns">
     <ul class="medium-block-grid-3">
       {% for page in site.work %}
@@ -18,7 +18,7 @@ redirect_from:
   </div>
 </div>
 <div class="row">
-  <div class="medium-2 medium-offset-2 columns"><h2>Story</h2></div>
+  <div class="medium-3 medium-offset-1 columns column-label"><h2>About</h2></div>
   <div class="medium-8 columns">
     <p>By day, I'm a developer at <a href="http://www.boostlabs.com">Boost Labs</a>. By night, I'm a developer in, well, my living room.
     <p>Through my architectural design curriculum and other artistic pursuits, I've learned how to design physical and virtual spaces that afford many kinds of information flows. There's some implicit psychology in architecture that I've always found very interesting&mdash;an understanding of which is necessary for directing a person's interaction with constructions or diagrams. I feel that these experiences translate well to UX/UI, where I can design human-computer interactions.</p>
@@ -27,18 +27,9 @@ redirect_from:
   </div>
 </div>
 <div class="row">
-  <div class="medium-2 medium-offset-2 columns"><h2>Thoughts</h2></div>
+  <div class="medium-3 medium-offset-1 columns column-label"><h2>Contact</h2></div>
   <div class="medium-8 columns">
-    <ul class="medium-block-grid-3">
-      {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<div class="row">
-  <div class="medium-2 medium-offset-2 columns"><a href="/cv/"><h2>Resume</h2></a></div>
-  <div class="medium-8 columns">
+    <h3><a href="{{ site.email | prepend: "mailto://" }}" target="_blank">{{ site.email }}</a></h3>
   </div>
 </div>
 
