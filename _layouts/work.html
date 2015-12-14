@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="page">
+
+  <header class="row">
+    <div class="medium-11 medium-centered columns">
+      <h2>{% if page.displaytitle %}{{ page.displaytitle }}{% else %}{{ page.title }}{% endif %}</h2>
+      <h4 class="subheader">{% if page.technology %}<span>Technology: </span>{{ page.technology }}{% endif %}</h4>
+
+    </div>
+  </header>
+
+  <article class="row">
+    <div class="medium-11 medium-centered columns">{{ content }}</div>
+  </article>
+
+  <div class="row" style="margin-top: 2rem;">
+    <div class="medium-5 medium-offset-1 columns">
+      {% if page.previous-work-url %}
+        <a class="prev" href="{{page.previous-work-url}}">&laquo; {{page.previous-work-title}}</a>
+      {% endif %}
+    </div>
+    <div class="medium-5 columns end" style="text-align: right;">
+      {% if page.next-work-url %}
+        <a class="next" href="{{page.next-work-url}}">{{page.next-work-title}} &raquo;</a>
+      {% endif %}
+    </div>
+  </div>
+
+</div>

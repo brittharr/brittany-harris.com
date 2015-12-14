@@ -12,39 +12,30 @@
  * SETTINGS
  * Global...............Globally-available variables and config.
  * Colors...............Manage our color palette in isolation.
- * Responsive...........Set up and name our breakpoints.
  *
  * TOOLS
- * Mixins...............Useful mixins.
- * Responsive...........Responsive tooling (requires responsive settings).
- * Zurb Foundation......XYZ.
  * CSStyle..............CSStyle.
  *
  * GENERIC
  * Normalize.css........A level playing field.
+ * Zurb Foundation......Grid and text framework.
+ * Font Awesome.........Font Awesome icons.
  *
  * BASE
- * Headings.............H1–H6 styles.
  *
  * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
  *
  * COMPONENTS
- * Page-head............The main page header.
- * Page-foot............The main page footer.
- * Buttons..............Button elements.
  *
  * TRUMPS
- * Text.................Text helpers.
+ *
  */
 
 /**
  * #SETTINGS
  */
-// @import "settings.global";
+@import "settings.global";
 @import "settings.colors";
-// @import "settings.responsive";
-@import "settings.variables";
 
 
 
@@ -53,12 +44,6 @@
 /**
  * #TOOLS
  */
-@import "../node_modules/foundation-sites/scss/vendor/normalize";
-@import "../node_modules/foundation-sites/scss/foundation";
-@include foundation-everything;
-@import "../node_modules/font-awesome/scss/font-awesome";
-// @import "tools.mixins";
-@import "tools.responsive";
 @import "../node_modules/csstyle/csstyle";
 
 
@@ -68,6 +53,10 @@
 /**
  * #GENERIC
  */
+@import "../node_modules/foundation-sites/scss/vendor/normalize";
+@import "../node_modules/foundation-sites/scss/foundation";
+@include foundation-everything;
+@import "../node_modules/font-awesome/scss/font-awesome";
 
 
 
@@ -76,7 +65,7 @@
 /**
  * #BASE
  */
-
+@import "base.page";
 
 
 
@@ -92,7 +81,9 @@
 /**
  * #COMPONENTS
  */
-// @import "components.cv";
+@import "components.header";
+@import "components.page";
+@import "components.footer";
 
 
 
@@ -101,52 +92,3 @@
 /**
  * #TRUMPS
  */
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-// @import
-        // "base",
-        // "layout",
-        // "syntax-highlighting"
-// ;
-body {
-    font-family: 'aktiv-grotesk', sans-serif;
-    background-color: $background-color;
-    color: $text-color;
-}
-
-$gradient: linear-gradient(45deg, $primary-color, $secondary-color);
-
-.button {
-  color: transparent;
-  font-size: 1.5rem;
-  letter-spacing: 4px;
-  border: 4px solid transparent;
-  border-image: $gradient;
-  border-image-slice: 1;
-  background: $gradient;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  transition: all 0.2s ease;
-
-  &:hover {
-    // border-image: $gradient;
-    background: $gradient;
-  }
-}
-
-.social-media-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
-    text-align: center;
-
-    li {
-        display: inline-block;
-        margin: 10px;
-    }
-}
-
-.column-label {
-    text-align: right;
-}

@@ -1,10 +1,18 @@
 ---
-layout: page
+layout: work
 title: Automated Reports
+displaytitle: Automated Reports for BNY Mellon
+technology: D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf
+thumbnail-url: //placehold.it/300x300
+next-work-url: /work/nbr
+next-work-title: Modular Visualizations
+previous-work-url: /work/truecar-dashboard
+previous-work-title: BI Dashboard
 ---
-## Automated Reports for BNY Mellon
 
 [BNY Mellon](https://www.bnymellon.com/) conducts an investor relations survey each year among 700 participants representing companies from 63 nations. This survey covers key emerging trends in today’s capital markets. They approached [Boost Labs](http://www.boostlabs.com/) with a ton of survey data, and were looking for our help to find meaning in the data and visualize it in a series of reports.
+
+Our goal was to standardize a cutting-edge, print-ready report intended for investors and investment professionals. We then developed a system of integrating the data and rendering designed reports. The outcome is a system that can build beautiful reports from BNY Mellon’s survey results for years to come.
 
 In our initial discovery and analysis, I helped the team analyze the survey data on a global scale. We based our visual analysis on stories from the BNY Investor Relations team, and determined highly custom charts and infographics to express these stories in the primary report "Global Trends in Investor Relations 2013" (GTIR).
 
