@@ -8,9 +8,9 @@ redirect_from:
  - /contact.html
 ---
 <div class="row" style="margin-bottom: 1rem;">
-  <div class="medium-3 medium-offset-1 columns medium-text-right column-label"><h6 style="line-height: 1;">Work</h6></div>
-  <div class="medium-6 columns end">
-    <div class="row small-up-2 medium-up-3 large-up-4">
+  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6 style="line-height: 1;">Work</h6></div>
+  <div class="medium-8 columns end">
+    <div class="row small-up-2 large-up-3">
       {% for page in site.work %}
       <div class="column" style="margin-bottom: 1rem;"><a class="post-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}"><img src="{{ page.thumbnail-url }}"></a></div>
       {% endfor %}
@@ -18,16 +18,15 @@ redirect_from:
   </div>
 </div>
 <div class="row" style="margin-bottom: 1rem;">
-  <div class="medium-3 medium-offset-1 columns medium-text-right column-label"><h6>About</h6></div>
-  <div class="medium-6 columns end">
+  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6>About</h6></div>
+  <div class="medium-8 columns end">
     <p>By day, I'm a developer at <a href="http://www.boostlabs.com">Boost Labs</a>. By night, I'm a developer in, well, my living room.
-    <p>Feel free to contact me with any questions!</p>
   </div>
 </div>
 <div class="row">
-  <div class="medium-3 medium-offset-1 columns medium-text-right column-label"><h6>Contact</h6></div>
-  <div class="medium-6 columns end">
-    <h3 style="line-height: 1;"><a href="{{ site.email | prepend: "mailto://" }}" target="_blank">{{ site.email }}</a></h3>
+  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6>Contact</h6></div>
+  <div class="medium-8 columns end">
+    <h3 style="line-height: 1;"><a href="{{ site.email | prepend: "mailto://" }}" target="_blank" class="plain-link">{{ site.email }}</a></h3>
   </div>
 </div>
 

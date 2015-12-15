@@ -6,8 +6,7 @@ layout: default
   <header class="row">
     <div class="medium-11 medium-centered columns">
       <h2>{% if page.displaytitle %}{{ page.displaytitle }}{% else %}{{ page.title }}{% endif %}</h2>
-      <h4 class="subheader">{% if page.technology %}<span>Technology: </span>{{ page.technology }}{% endif %}</h4>
-
+      <h6 class="subheader medium-text-right"><strong>Technology: </strong>{% if page.technology %}{{ page.technology }}{% endif %}</h6>
     </div>
   </header>
 
@@ -19,6 +18,8 @@ layout: default
     <div class="medium-5 medium-offset-1 columns">
       {% if page.previous-work-url %}
         <a class="prev" href="{{page.previous-work-url}}">&laquo; {{page.previous-work-title}}</a>
+      {% else %}
+        &nbsp;
       {% endif %}
     </div>
     <div class="medium-5 columns end" style="text-align: right;">
