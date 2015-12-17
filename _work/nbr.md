@@ -5,16 +5,19 @@ displaytitle: NBR Modular Visualizations
 technology: SVG, D3.js, Grunt
 thumbnail-url: /assets/images/case-studies/nbr/thumbnail.jpg
 
+next-work-url: /work/qedooo
+next-work-title: D3 Based Charting Library
 previous-work-url: /work/bny-reports
 previous-work-title: Automated Reports
 ---
+
 <div class="row">
-    <div class="medium-6 columns">
-        <p>The <a href="http://www.nbr.org/">National Bureau of Asian Research (NBR)</a> needed a dynamic infographic to showcase the results of their survey and investigation into violence in Pakistan.</p>
-        <p>Our interdisciplinary team at <a href="http://www.boostlabs.com">Boost Labs</a> conceptualized, designed, and developed a set of visualization "modules" that NBR has been able to embed as a full infographic or in split pieces however they have needed to support their findings.</p>
+    <div class="medium-6 medium-push-6 columns">
+        <p>The <a href="http://www.nbr.org/">National Bureau of Asian Research (NBR)</a> came to <a href="http://www.boostlabs.com">Boost Labs</a> looking for a visualization that would support their recent survey activity in Pakistan by enhancing the transparency and availability of their data.</p>
+        <p>Our solution, architected by an inter-disciplinary team of designers and developers, was a set of interactive charts that enabled users to view each data source from multiple angles (NBR was especially interested in seeing the data for Pakistan as a country and when broken down by region). We leveraged D3, Sass, and some PHP to build the interactive chart modules that NBR has been able to embed in the Wordpress websites that they use to publicize their results.</p>
         <img src="/assets/images/case-studies/nbr/survey.png" alt="Stacked Bar Charts of Survey Answers">
     </div>
-    <div class="medium-6 columns">
+    <div class="medium-6 medium-pull-6 columns">
         <img src="/assets/images/case-studies/nbr/violence.gif" alt="Heat Map of Pakistan Violence Data Over Time">
         <img src="/assets/images/case-studies/nbr/social.jpg" alt="Heat Map and Bar Chart of Social Indicators">
     </div>

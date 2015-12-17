@@ -1,0 +1,25 @@
+@import "../node_modules/font-awesome/scss/variables";
+@import "../node_modules/font-awesome/scss/mixins";
+@import "../node_modules/font-awesome/scss/path";
+@import "../node_modules/font-awesome/scss/core";
+// @import "../node_modules/font-awesome/scss/larger";
+// @import "../node_modules/font-awesome/scss/fixed-width";
+// @import "../node_modules/font-awesome/scss/list";
+// @import "../node_modules/font-awesome/scss/bordered-pulled";
+// @import "../node_modules/font-awesome/scss/animated";
+// @import "../node_modules/font-awesome/scss/rotated-flipped";
+// @import "../node_modules/font-awesome/scss/stacked";
+
+/* @import "../node_modules/font-awesome/scss/icons"; */
+.#{$fa-css-prefix}-chevron-left:before { content: $fa-var-chevron-left; }
+.#{$fa-css-prefix}-chevron-right:before { content: $fa-var-chevron-right; }
+.#{$fa-css-prefix}-github:before { content: $fa-var-github; }
+.#{$fa-css-prefix}-github-square:before { content: $fa-var-github-square; }
+.#{$fa-css-prefix}-github-alt:before { content: $fa-var-github-alt; }
+.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
+.#{$fa-css-prefix}-twitter-square:before { content: $fa-var-twitter-square; }
+.#{$fa-css-prefix}-linkedin:before { content: $fa-var-linkedin; }
+.#{$fa-css-prefix}-linkedin-square:before { content: $fa-var-linkedin-square; }
+.#{$fa-css-prefix}-instagram:before { content: $fa-var-instagram; }
+.#{$fa-css-prefix}-file-text-o:before { content: $fa-var-file-text-o; }
+.#{$fa-css-prefix}-file-text:before { content: $fa-var-file-text; }

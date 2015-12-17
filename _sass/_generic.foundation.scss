@@ -1,0 +1,18 @@
+/* @import "../node_modules/foundation-sites/scss/foundation";
+ * @include foundation-everything;
+ */
+
+@import '../node_modules/foundation-sites/scss/vendor/normalize';
+@import '../node_modules/foundation-sites/scss/util/util';
+@import '../node_modules/foundation-sites/scss/global';
+
+@import '../node_modules/foundation-sites/scss/grid/grid';
+@import '../node_modules/foundation-sites/scss/typography/typography';
+@import '../node_modules/foundation-sites/scss/components/visibility';
+@import '../node_modules/foundation-sites/scss/components/float';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-visibility-classes;
+@include foundation-float-classes;

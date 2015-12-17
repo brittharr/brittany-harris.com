@@ -53,10 +53,8 @@
 /**
  * #GENERIC
  */
-@import "../node_modules/foundation-sites/scss/vendor/normalize";
-@import "../node_modules/foundation-sites/scss/foundation";
-@include foundation-everything;
-@import "../node_modules/font-awesome/scss/font-awesome";
+@import "generic.foundation";
+@import "generic.font-awesome";
 
 
 
