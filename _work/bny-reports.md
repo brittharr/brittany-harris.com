@@ -11,17 +11,18 @@ next-work-title: Modular Visualizations
 
 <div class="row">
     <div class="medium-6 columns">
-        <p><a href="https://www.bnymellon.com/">BNY Mellon</a> conducts an investor relations survey each year among 700 participants representing companies from 63 nations. This survey covers key emerging trends in today’s capital markets. They approached <a href="http://www.boostlabs.com/">Boost Labs</a> with a ton of survey data, and were looking for our help to find meaning in the data and visualize it in a series of reports.</p>
-        <p>Our goal was to standardize a cutting-edge, print-ready report intended for investors and investment professionals. We then developed a system of integrating the data and rendering designed reports. The outcome is a system that can build beautiful reports from BNY Mellon’s survey results for years to come.</p>
-        <p>In our initial discovery and analysis, I helped the team analyze the survey data on a global scale. We based our visual analysis on stories from the BNY Investor Relations team, and determined highly custom charts and infographics to express these stories in the primary report "Global Trends in Investor Relations 2013" (GTIR).</p>
-        <p>After figuring out the trends as a whole, we needed to find a way to show how respondents from 10 regions, 9 sectors, and 700+ companies compared to the responses from other cross-sections of the data, (e.g. generating a report for Japan comparing them to Global, Developed Markets, and Asia Pacific responses). Clearly, these reports would take a significant amount of time to create manually as we had for the GTIR, so it was time to come up with a method of automation.</p>
-        <p>We decided to break the survey data down by question and develop a template that would work across all of these reports and facilitate that automated process.</p>
+        <p>I'm super into automated reporting, and this project is where I caught the bug. <a href="https://www.bnymellon.com/">BNY Mellon</a> does an investor relations survey every year and wanted to publish a huge variety of aggregations of the collected data (without the corresponding number of design production time it had required in the past). My interdisciplinary team at <a href="http://www.boostlabs.com/">Boost Labs</a> came up with a plan based on the Region, Industry, and Company breakdowns that BNY requested that standardized the data groupings and comparisons and enabled us to use 10 templatized chart types to display every survey question for every breakdown.</p>
+        <p>We used <a href="http://d3js.org/">D3</a> to generate the charts in-browser as svg elements, then downloaded the generated report and used it as a support for the InDesign document required by the BNY team.</p>
+        <h4>Results</h4>
+        <p>For the 2013 survey (published in 2014), we automated the production of reports for over 700 individual companies, 11 industries, and 9 regions (plus 3 translations). Although development of the process took ~3 months, the final report production took more like 3 days.</p>
+        <p>BNY returned to Boost Labs for production of the 2015 survey results, and after a small number of adjustments from updated brand guidelines, we were able to easily produce and deliver this year's batch of reports.</p>
         <img src="/assets/images/case-studies/bny/bny9.png" alt="700 Benchmark Reports">
     </div>
     <div class="medium-6 columns">
         <img src="/assets/images/case-studies/bny/bny10.png" alt="700 Benchmark Reports">
-        <p>I used <a href="http://d3js.org/">D3</a> to generate the charts in-browser as svg elements, then downloading the generated report and using it as a support for the InDesign document required by the BNY team.</p>
-        <p>This is an interesting project, because BNY performed the survey again in 2015, and came back to Boost Labs to update the 2013 report with the new data and findings. We slightly updated the D3 chart templates to match their new marketing and brand guidelines, but the most satisfying part of this second year was seeing the original business goal achieved.</p>
+        <h4>Similar Projects</h4>
+        <p>Based on our experience with the automated reporting tool for BNY, we've created similar automated tools for other clients. There's been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I've really enjoyed continuing down the path of chart templatization.</p>
+        <p>One particular project had more custom and complex spread layouts (as well as data that is more variable than survey responses), so we began using Backbone.js as an MVC framework for viewing charts within each page. For full "export to PDF" functionality we use wkhtmltopdf, bypassing the previous need for InDesign and post-processing.</p>
     </div>
 </div>
 
