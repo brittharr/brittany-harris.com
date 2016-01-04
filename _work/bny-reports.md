@@ -2,6 +2,7 @@
 layout: work
 title: Automated Reports
 displaytitle: Automated Reports for BNY Mellon
+description: This is a data visualization, report automation system from D3 append to PDF export.
 technology: D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf
 thumbnail-url: /assets/images/case-studies/bny/thumbnail.jpg
 

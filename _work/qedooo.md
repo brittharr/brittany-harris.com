@@ -2,6 +2,7 @@
 layout: work
 title: D3 Based Charting Library
 displaytitle: QEDOOO
+description: QEDOOO is a D3 extension made to make design and development of flexible SVG charts even simpler.
 technology: D3.js, Grunt
 thumbnail-url: /assets/images/case-studies/qedooo/thumbnail.jpg
 

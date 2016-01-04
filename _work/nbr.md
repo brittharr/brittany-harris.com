@@ -2,6 +2,7 @@
 layout: work
 title: Modular Visualizations
 displaytitle: NBR Modular Visualizations
+description: Animations! Slicing and dicing data! These interactive D3 visualizations compare data points across time, space, and dimension.
 technology: SVG, D3.js, Grunt
 thumbnail-url: /assets/images/case-studies/nbr/thumbnail.jpg
 
