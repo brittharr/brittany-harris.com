@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Grocery Helper
 redirect_from: /projects/grocery-helper.html
 ---

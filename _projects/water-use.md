@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Water Use & Country Size
 redirect_from: /projects/water-use.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: About Me Infographic
 redirect_from: /projects/about-infographic.html
 ---

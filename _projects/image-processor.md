@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Image Processor
 redirect_from: /projects/image-processor.html
 ---

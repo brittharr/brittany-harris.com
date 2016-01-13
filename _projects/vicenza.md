@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Vicenza Sketchbook
 redirect_from: /projects/vicenza.html
 ---

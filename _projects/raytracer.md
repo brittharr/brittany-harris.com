@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Ray Tracer
 redirect_from: /projects/raytracer.html
 ---

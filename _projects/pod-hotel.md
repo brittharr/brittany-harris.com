@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Pod Hotel
 redirect_from: /projects/pod-hotel.html
 ---

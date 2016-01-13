@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Hospital Cafe
 redirect_from: /projects/hospital-cafe.html
 ---
