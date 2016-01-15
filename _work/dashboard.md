@@ -13,7 +13,7 @@ next-work-title: Modular Visualizations
 <div class="row">
     <div class="medium-6 columns">
         <p><a href="http://www.boostlabs.com/">Boost Labs</a> was asked to work on a project that would bring transparency to data and metrics from disparate departments across this large company. Our solution was a dashboard intended to be displayed on TV screens in a number of company buildings.</p>
-        <p>To accomplish the goal of unifying these datasets, we came up with the paradigm of screens for each department that move across the TV horizontally. Within the screens we scroll through visualizations vertically, making sure by the design that insights can be easily derived.</p>
+        <p>To accomplish the goal of unifying these datasets, we came up with the paradigm of screens for each department that move across the TV horizontally. Within the department screens we scroll through visualizations vertically, making sure by the design that insights can be easily derived.</p>
         <h4>Results</h4>
         <p>Leveraging Backbone views and Marionette layouts, I was really pleased with the amount of unification and DRY-ness that we were able to accomplish with the final application. We ended up doing a handful of super fast extensions to the dashboard for departments that wanted to be included, and really only needed to add in the additional data.</p>
     </div>

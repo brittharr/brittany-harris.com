@@ -22,8 +22,8 @@ next-work-title: BI Dashboard
     <div class="medium-6 columns">
         <img src="/assets/images/case-studies/bny/bny10.png" alt="700 Benchmark Reports">
         <h4>Similar Projects</h4>
-        <p>Based on our experience with the automated reporting tool for BNY, we’ve created similar automated tools for other clients. There’ve been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I’ve really enjoyed continuing down the path of chart templatization.</p>
-        <p>One particular project had more custom and complex spread layouts (as well as data that is more variable than survey responses), so we began using Backbone.js as an MVC framework for viewing charts within each page. For full “export to PDF” functionality we use wkhtmltopdf, bypassing the previous need for InDesign and post-processing</p>
+        <p>Based on our experience with the automated reporting tool for BNY, we’ve created similar automated tools for other clients. There has been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I’ve really enjoyed continuing down the path of chart templatization.</p>
+        <p>One particular project had more custom and complex spread layouts (as well as data that is more variable than survey responses), so we began using Backbone.js as an MVC framework for viewing charts within each page. For full “export to PDF” functionality we use wkhtmltopdf, bypassing the previous need for InDesign and post-processing.</p>
     </div>
 </div>
 
