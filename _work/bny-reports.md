@@ -6,8 +6,8 @@ description: This is a data visualization, report automation system from D3 appe
 technology: D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf
 thumbnail-url: /assets/images/case-studies/bny/thumbnail.jpg
 
-next-work-url: /work/nbr
-next-work-title: Modular Visualizations
+next-work-url: /work/dashboard
+next-work-title: BI Dashboard
 ---
 
 <div class="row">

@@ -8,8 +8,8 @@ thumbnail-url: /assets/images/case-studies/nbr/thumbnail.jpg
 
 next-work-url: /work/qedooo
 next-work-title: D3 Based Charting Library
-previous-work-url: /work/bny-reports
-previous-work-title: Automated Reports
+previous-work-url: /work/dashboard
+previous-work-title: BI Dashboard
 ---
 
 <div class="row">
