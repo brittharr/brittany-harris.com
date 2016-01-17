@@ -17,12 +17,13 @@ redirect_from:
     </div>
   </div>
 </div>
-<div class="row" style="margin-bottom: 1rem;">
+<div class="row" style="margin-bottom: 1rem; position: relative; ">
   <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6>About</h6></div>
   <div class="medium-8 large-7 columns end">
-    <p>I'm a front-end developer who is becoming more full-stack with every Github issue I complete. By day, I can be found solving problems and coding at <a href="http://www.boostlabs.com">Boost Labs</a> in the suburbs of <s>humid</s> beautiful Washington, D.C. By night, I hang out with my cats and watch Star Trek.</p>
-    <p>I believe in embracing curiosity, learning, the value of collaboration and unique perspectives. I’ve found that the most impactful discoveries are made by experimenting and learning from experience. I believe in the antidisciplinary and embracing the innovation that is found in the crossover. It's up to us to find creative solutions to real problems. More specific specifics can be found on the <a href="{{ "/assets/cv/brittanyharris-resume.pdf" | prepend: site.baseurl }}" target="_blank" title="Resume">"ole resume"</a>.</p>
+    <p>I'm a front-end developer who is becoming more full-stack with every Github issue I complete. By day, I can be found solving problems and coding at <a href="http://www.boostlabs.com">Boost Labs</a> in the suburbs of <s>humid</s> beautiful Washington, D.C. By night, I hang out with my <span data-egg="assets/images/cats.jpg">cats</span> and watch <span data-egg="assets/images/spot.jpg">Star Trek</span>.</p>
+    <p>I believe in embracing curiosity, learning, the value of collaboration and unique perspectives. I’ve found that the most impactful discoveries are made by experimenting and learning from experience. I believe in the antidisciplinary and embracing the innovation that is found in the crossover. It's up to us to find creative solutions to real problems. More specifics can be found on my <a href="{{ "/assets/cv/brittanyharris-resume.pdf" | prepend: site.baseurl }}" target="_blank" title="Resume">resume</a>.</p>
   </div>
+  <div id="easteregg"></div>
 </div>
 <div class="row">
   <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6>Contact</h6></div>
@@ -30,4 +31,21 @@ redirect_from:
     <h3 style="line-height: 1;"><a href="{{ site.email | prepend: "mailto://" }}" target="_blank" class="plain-link">{{ site.email }}</a></h3>
   </div>
 </div>
+
+<script>
+  var imageToggles = document.querySelectorAll('[data-egg]'),
+      imageContainer = document.getElementById('easteregg');
+  [].forEach.call(imageToggles,function(e){
+    e.addEventListener('mouseenter',function(e){
+        var img = new Image();
+        img.src = this.dataset.egg;
+        imageContainer.appendChild(img);
+        imageContainer.style.opacity = 1;
+      },false);
+    e.addEventListener('mouseout',function(e){
+        imageContainer.style.opacity = 0;
+        imageContainer.innerHTML = '';
+      },false);
+  });
+</script>
 

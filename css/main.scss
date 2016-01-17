@@ -2,92 +2,20 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-/*------------------------------------*\
-    #BRITTANY-HARRIS.COM
-\*------------------------------------*/
 
-/**
- * CONTENTS
- *
- * SETTINGS
- * Global...............Globally-available variables and config.
- * Colors...............Manage our color palette in isolation.
- *
- * TOOLS
- * CSStyle..............CSStyle.
- *
- * GENERIC
- * Normalize.css........A level playing field.
- * Zurb Foundation......Grid and text framework.
- * Font Awesome.........Font Awesome icons.
- *
- * BASE
- *
- * OBJECTS
- *
- * COMPONENTS
- *
- * TRUMPS
- *
- */
-
-/**
- * #SETTINGS
- */
 @import "settings.global";
 @import "settings.colors";
 
-
-
-
-
-/**
- * #TOOLS
- */
 @import "../node_modules/csstyle/csstyle";
 
-
-
-
-
-/**
- * #GENERIC
- */
 @import "generic.foundation";
 @import "generic.font-awesome";
 
-
-
-
-
-/**
- * #BASE
- */
 @import "base.text";
 @import "base.page";
 
+@import "objects.easteregg";
 
-
-
-/**
- * #OBJECTS
- */
-
-
-
-
-
-/**
- * #COMPONENTS
- */
 @import "components.header";
 @import "components.page";
 @import "components.footer";
-
-
-
-
-
-/**
- * #TRUMPS
- */
