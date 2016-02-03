@@ -21,13 +21,9 @@ collections:
     permalink: /projects/:path/
 
 # Build settings
-markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 exclude: ['node_modules']
-
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "highlight", "footnotes", "smart"]
 
 sass:
   style: compressed
