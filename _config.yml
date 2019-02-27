@@ -28,5 +28,5 @@ exclude: ['node_modules', 'gulpfile.babel.js', 'package.json', 'Gemfile', 'Gemfi
 sass:
   style: compressed
 
-gems:
+plugins:
   - jekyll-redirect-from
