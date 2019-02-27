@@ -23,7 +23,7 @@ redirect_from:
   <div class="medium-8 columns end">
     <div class="row small-up-2 large-up-3">
       {% for page in site.work %}
-      <div class="column" style="margin-bottom: 1rem;"><a class="post-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}"><img src="{{ page.thumbnail-url }}"></a></div>
+      <div class="column" style="margin-bottom: 1rem;"><a class="post-link" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}"><img src="{{ page.thumbnail-url }}" alt="{{ page.title }}"></a></div>
       {% endfor %}
     </div>
   </div>
