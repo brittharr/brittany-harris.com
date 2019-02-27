@@ -1,0 +1,1 @@
+{% for graphic in include.graphics %}<a class="post-link" href="https://www.bloomberg.com/{{ graphic.slug }}">{{ graphic.hed }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}

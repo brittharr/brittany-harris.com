@@ -7,8 +7,19 @@ redirect_from:
  - /about.html
  - /contact.html
 ---
+{% assign display_graphics = site.data.graphics | where:"display", nil %}
+{% assign evergreens = display_graphics | where:"category", "evergreen" %}
+{% assign events = display_graphics | where:"category", "event" %}
+{% assign stories = display_graphics | where:"category", "story" %}
 <div class="row" style="margin-bottom: 1rem;">
-  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6 style="line-height: 1;">Work</h6></div>
+  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6 style="line-height: 1;">Bloomberg Graphics</h6></div>
+  <div class="medium-8 columns end">
+    <p>My work at Bloomberg is varied and covers everything from publishing infrastructure and templating to breaking news graphics. I've munged data and created flexible interactive charts for data-driven evergreens: {% include graphics-list.html graphics=evergreens %}. I've worked on high-pressure, high-volume dashboard for events with real-time results {% include graphics-list.html graphics=events %}. I also get to help my fantastic data journalist and reporter colleagues create standalone stories such as {% include graphics-list.html graphics=stories %}.</p>
+    <p><a href="https://www.bloomberg.com/authors/AS07h2XMulM/brittany-harris">See what I've been working on recently</a>.
+  </div>
+</div>
+<div class="row" style="margin-bottom: 1rem;">
+  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6 style="line-height: 1;">Consulting Work</h6></div>
   <div class="medium-8 columns end">
     <div class="row small-up-2 large-up-3">
       {% for page in site.work %}
@@ -17,35 +28,3 @@ redirect_from:
     </div>
   </div>
 </div>
-<div class="row" style="margin-bottom: 1rem; position: relative; ">
-  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6>About</h6></div>
-  <div class="medium-8 large-7 columns end">
-    <p>I'm a front-end developer who is becoming more full-stack with every Github issue I complete. By day, I can be found solving problems and coding at <a href="http://www.boostlabs.com">Boost Labs</a> in the suburbs of <s>humid</s> beautiful Washington, D.C. By night, I hang out with my <span data-egg="assets/images/cats.jpg">cats</span> and watch <span data-egg="assets/images/spot.jpg">Star Trek</span>.</p>
-    <p>I believe in embracing curiosity, learning, the value of collaboration and unique perspectives. I’ve found that the most impactful discoveries are made by experimenting and learning from experience. I believe in the antidisciplinary and embracing the innovation that is found in the crossover. It's up to us to find creative solutions to real problems. More specifics can be found on my <a href="{{ "/assets/cv/brittanyharris-resume.pdf" | prepend: site.baseurl }}" target="_blank" title="Resume">resume</a>.</p>
-  </div>
-  <div id="easteregg"></div>
-</div>
-<div class="row">
-  <div class="medium-2 medium-offset-1 columns medium-text-right column-label"><h6>Contact</h6></div>
-  <div class="medium-8 columns end">
-    <h3 style="line-height: 1;"><a href="{{ site.email | prepend: "mailto://" }}" target="_blank" class="plain-link">{{ site.email }}</a></h3>
-  </div>
-</div>
-
-<script>
-  var imageToggles = document.querySelectorAll('[data-egg]'),
-      imageContainer = document.getElementById('easteregg');
-  [].forEach.call(imageToggles,function(e){
-    e.addEventListener('mouseenter',function(e){
-        var img = new Image();
-        img.src = this.dataset.egg;
-        imageContainer.appendChild(img);
-        imageContainer.style.opacity = 1;
-      },false);
-    e.addEventListener('mouseout',function(e){
-        imageContainer.style.opacity = 0;
-        imageContainer.innerHTML = '';
-      },false);
-  });
-</script>
-

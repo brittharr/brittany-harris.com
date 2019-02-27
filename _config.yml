@@ -23,7 +23,7 @@ collections:
 # Build settings
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
-exclude: ['node_modules']
+exclude: ['node_modules', 'gulpfile.babel.js', 'package.json', 'Gemfile', 'Gemfile.lock']
 
 sass:
   style: compressed
