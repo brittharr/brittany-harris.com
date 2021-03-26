@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Brittany Harris"
+			href="http://brittany-harris.com/feed.xml"
+		/>
+
+		%svelte.head%
+	</head>
+	<body class="page">
+		<div id="svelte">%svelte.body%</div>
+
+		<script src="//use.typekit.net/bgd7tvd.js"></script>
+		<script>
+			try {
+				Typekit.load({ async: true });
+			} catch (e) {}
+		</script>
+
+		<script>
+			!(function (m, e, o, w) {
+				m.GoogleAnalyticsObject = o;
+				m[o] ||
+					(m[o] = function () {
+						(m[o].q = m[o].q || []).push(arguments);
+					});
+				m[o].l = +new Date();
+				w = e.createElement('script');
+				var e = e.scripts[0];
+				w.src = '//www.google-analytics.com/analytics.js';
+				e.parentNode.insertBefore(w, e);
+			})(window, document, 'meow');
+
+			meow('create', 'UA-71427770-1', 'brittany-harris.com');
+			meow('send', 'pageview');
+		</script>
+	</body>
+</html>

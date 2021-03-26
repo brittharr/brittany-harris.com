@@ -2,3 +2,7 @@ _site
 .sass-cache
 _drafts
 node_modules
+.DS_Store
+/.svelte
+/build
+/functions
