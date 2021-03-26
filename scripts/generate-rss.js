@@ -75,5 +75,5 @@ const rss = `
 	.replace(/[^\S]+</gm, '<')
 	.trim();
 
-fs.writeFileSync(`build/feed.xml`, rss);
+fs.writeFileSync(`static/feed.xml`, rss);
 console.log('✨ Generated RSS Feed');
