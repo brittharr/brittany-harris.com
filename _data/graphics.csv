@@ -1,24 +1,39 @@
 slug,hed,category,display
+graphics/2020-hurricane-season-overview,This Year’s Wild Hurricane Season Is an Ominous Sign of What’s Ahead,story,1
+graphics/2020-us-election-results,2020 U.S. Elections,event,1
+graphics/2020-flood-risk-zone-us-map,Mapping America's Underwater Real Estate,story,1
+business-schools/2020,Bloomberg Businessweek Best B-Schools 2020-21,evergreen,1
+graphics/2020-presidential-delegates-tracker,Who’s Winning the 2020 Presidential Delegate Count?,event,0
+graphics/climate-change-data-green,Bloomberg Data Dash: A Live Climate Scoreboard for the World,evergreen,1
+graphics/2019-uk-general-election-results,2019 U.K. General Election,event,1
+business-schools/2019,Bloomberg Businessweek Best B-Schools 2019-20,evergreen,0
+graphics/2019-largest-landowners-in-us,Here’s Who Owns the Most Land in America,story,1
+graphics/2019-uk-sexual-discrimination-settlements,How Corporate Britain Hides Thousands of Sex Discrimination Cases,story,0
+graphics/2019-european-parliament-elections,2019 European Parliament Elections,event,1
+graphics/2020-democratic-primary-debates-power-dynamics,How Candidates Ignored the Rules to be Heard in the Democratic Debates,story,0
+graphics/2019-international-energy-use-renewables-coal-oil,How Each Country Contributed to the Explosion in Energy Consumption,story,0
+business-schools/2018,Bloomberg Businessweek Best B-Schools 2018-19,evergreen,0
+graphics/2018-democracy-decline,Elected Leaders Are Making the World Less Democratic,story,0
 graphics/jobs-numbers,Jobs Numbers: Who’s Hiring in America—and Who’s Not,evergreen,1
-graphics/property-prices/nyc,New York City Property Prices,evergreen,1
-billionaires,The Bloomberg Billionaires Index,evergreen,1
+graphics/property-prices/nyc,New York City Property Prices,evergreen,0
+billionaires,The Bloomberg Billionaires Index,evergreen,0
 graphics/global-technology-companies,Global Technology Tracker,evergreen,0
 graphics/opec-production-targets,OPEC Production Targets,evergreen,0
-graphics/2018-midterm-election-results/,2018 U.S. Midterm Elections,event,1
-graphics/2017-uk-election,2017 U.K. Election,event,1
-graphics/2016-election-results/,2016 U.S. Elections,event,1
+graphics/2018-midterm-election-results/,2018 U.S. Midterm Elections,event,0
+graphics/2017-uk-election,2017 U.K. General Election,event,0
+graphics/2016-election-results/,2016 U.S. Elections,event,0
 graphics/2016-travels-through-brexit-britain,Travels Through Brexit Britain,story,0
 politics/graphics/2016-presidential-campaign-fundraising,Tracking the 2016 Presidential Money Race,story,0
-graphics/pessimists-guide-to-2017,The Pessimist’s Guide to 2017,story,1
-graphics/2017-arctic,How a Melting Arctic Changes Everything,story,1
+graphics/pessimists-guide-to-2017,The Pessimist’s Guide to 2017,story,0
+graphics/2017-arctic,How a Melting Arctic Changes Everything,story,0
 graphics/2017-more-robots-fewer-jobs,"More Robots, Fewer Jobs",story,0
-graphics/2017-fema-faulty-flood-maps,Outdated and Unreliable: FEMA’s Faulty Flood Maps Put Homeowners at Risk,story,1
-politics/graphics/2016-fec-filings,,story,0
-graphics/2016-epipen-pricing,,story,0
-graphics/2017-brexit-barometer,,evergreen,0
-graphics/2018-pyeongchang-olympics-medal-counter,,event,0
-graphics/2017-opec-timeline,,story,0
-graphics/2018-apple-at-one-trillion-market-cap,,story,0
-politics/graphics/2016-nuclear-weapon-launch,,story,0
-graphics/global-risk-briefing,,evergreen,0
-graphics/2016-olympics-medal-counter,,event,0
+graphics/2017-fema-faulty-flood-maps,Outdated and Unreliable: FEMA’s Faulty Flood Maps Put Homeowners at Risk,story,0
+politics/graphics/2016-fec-filings,Tracking the 2016 Presidential Money Race,story,0
+graphics/2016-epipen-pricing,How EpiPen’s Price Rose and Rose,story,0
+graphics/2017-brexit-barometer,Today’s Brexit Barometer,evergreen,0
+graphics/2018-pyeongchang-olympics-medal-counter,graphics/2018-pyeongchang-olympics-medal-counter,event,0
+graphics/2017-opec-timeline,Rising Oil Prices Reignite the OPEC-U.S. Shale Rivalry,story,0
+graphics/2018-apple-at-one-trillion-market-cap,How Apple Overcame Fits and Flops to Grow Into a Trillion-Dollar Company,story,0
+politics/graphics/2016-nuclear-weapon-launch,To Launch a Nuclear Strike, President Trump Would Take These Steps,story,0
+graphics/global-risk-briefing,Global Risk Briefing,evergreen,0
+graphics/2016-olympics-medal-counter,The Winners in Rio. Bloomberg's Olympic Medal Tracker,event,0

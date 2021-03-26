@@ -61,10 +61,11 @@
 			My work at Bloomberg is varied and covers everything from publishing infrastructure and
 			templating to breaking news graphics. I've munged data and created flexible interactive charts
 			for data-driven evergreens: <GraphicsList graphics={evergreens} />. I've worked on
-			high-pressure, high-volume dashboard for events with real-time results <GraphicsList
-				graphics={events}
-			/>. I also get to help my fantastic data journalist and reporter colleagues create standalone
-			stories such as <GraphicsList graphics={stories} />.
+			high-pressure, high-volume reporting dashboards for events with real-time results, most
+			recently the <GraphicsList graphics={events} />. I also get to help my fantastic data
+			journalist and reporter colleagues create standalone stories such as <GraphicsList
+				graphics={stories}
+			/>.
 		</p>
 		<p>
 			<a href="https://www.bloomberg.com/authors/AS07h2XMulM/brittany-harris"
