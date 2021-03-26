@@ -1,0 +1,1 @@
+import{S as s,i as t,s as r}from"../chunks/index-1610c520.js";async function e(){return{status:301,redirect:"/"}}export default class extends s{constructor(s){super(),t(this,s,null,null,r,{})}}export{e as load};

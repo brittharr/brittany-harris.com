@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Brittany Harris"
+			href="http://brittany-harris.com/feed.xml"
+		/>
+
+		<title>Ray Tracer</title><meta name="description" content="Brittany Harris is a front end developer with a lot of feelings about cats, the internet, and cats on the internet." data-svelte="svelte-nwhgs0"><link rel="canonical" href="http://brittany-harris.com/projects/raytracer" data-svelte="svelte-nwhgs0">
+
+
+
+<link rel="modulepreload" href="/./_app/start-84189fd7.js">
+			<link rel="modulepreload" href="/./_app/chunks/index-1610c520.js">
+			<link rel="modulepreload" href="/./_app/pages/projects/[slug].svelte-b99777ef.js">
+			<link rel="modulepreload" href="/./_app/chunks/stores-286a2a37.js">
+			<link rel="modulepreload" href="/./_app/chunks/helpers-2a7bf7cb.js">
+			<link rel="stylesheet" href="/./_app/assets/start-13e461ea.css">
+
+
+		<script type="module">
+			import { start } from "/./_app/start-84189fd7.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				status: 200,
+				error: null,
+				session: {},
+				nodes: [
+					import("/./_app/pages/projects/[slug].svelte-b99777ef.js")
+				],
+				page: {
+					host: "location.host",
+					path: "/projects/raytracer",
+					query: new URLSearchParams(""),
+					params: {"slug":"raytracer"}
+				}
+			});
+		</script>
+	</head>
+	<body class="page">
+		<div id="svelte">
+
+
+<header class="page-header row"><div class="medium-11 medium-centered columns medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div></header>
+
+<div class="page-content"><div class="wrapper">
+
+<div class="row"><h6 class="subheader medium-11 medium-centered columns">Hey! Thanks for visiting. This is an older project that I worked on while in school. If you want
+to see what I&#39;ve been up to recently, <a href="/">visit my new homepage.</a></h6></div>
+
+<div class="page"><header class="row"><div class="medium-11 medium-centered columns"><h2>Ray Tracer</h2></div></header>
+
+	<article class="row"><div class="medium-11 medium-centered columns"><p>After studying how ray tracing works as a method of image rendering, I wrote a console application that renders a given scene. Basic geometries (triangle, sphere, cylinder, cone, and box) and light sources (point, spot, and directional) are recognized. Recursive ray tracing is called upon for reflections, refractions, transparency, and shadows.</p>
+<h6 id="tools-emacs"><strong>Tools:</strong> Emacs</h6>
+<h6 id="technologies-c"><strong>Technologies:</strong> C++</h6>
+<p><img src="/assets/images/projects/lighting.png" alt="Ray tracing with emissive &amp; ambient light, diffuse, and specular light">
+<img src="/assets/images/projects/transforms.png" alt="Ray tracing with shadows, transformations, and reflections"></p>
+</div></article></div></div></div>
+
+<footer class="row"><div class="medium-centered columns"><ul class="social-media-list"><li><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank" class="fa fa-file-text" title="Resume"></a></li>
+
+	<li><a href="https://github.com/brittharr" target="_blank" rel="noopener" class="fa fa-github fa-lg" title="Github"></a></li>
+
+	<li><a href="https://twitter.com/brittharr" target="_blank" rel="noopener" class="fa fa-twitter fa-lg" title="Twitter"></a></li>
+
+	<li><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener" class="fa fa-linkedin-square fa-lg" title="Linkedin"></a></li>
+
+	<li><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener" class="fa fa-instagram fa-lg" title="Instagram"></a></li></ul></div></footer>
+
+
+
+	<script type="svelte-data" url="/api/projects/raytracer.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"layout\":\"project\",\"title\":\"Ray Tracer\",\"redirect_from\":\"/projects/raytracer.html\",\"content\":\"<p>After studying how ray tracing works as a method of image rendering, I wrote a console application that renders a given scene. Basic geometries (triangle, sphere, cylinder, cone, and box) and light sources (point, spot, and directional) are recognized. Recursive ray tracing is called upon for reflections, refractions, transparency, and shadows.</p>\\n<h6 id=\\\"tools-emacs\\\"><strong>Tools:</strong> Emacs</h6>\\n<h6 id=\\\"technologies-c\\\"><strong>Technologies:</strong> C++</h6>\\n<p><img src=\\\"/assets/images/projects/lighting.png\\\" alt=\\\"Ray tracing with emissive &amp; ambient light, diffuse, and specular light\\\">\\n<img src=\\\"/assets/images/projects/transforms.png\\\" alt=\\\"Ray tracing with shadows, transformations, and reflections\\\"></p>\\n\"}"}</script>
+</div>
+
+		<script src="//use.typekit.net/bgd7tvd.js"></script>
+		<script>
+			try {
+				Typekit.load({ async: true });
+			} catch (e) {}
+		</script>
+
+		<script>
+			!(function (m, e, o, w) {
+				m.GoogleAnalyticsObject = o;
+				m[o] ||
+					(m[o] = function () {
+						(m[o].q = m[o].q || []).push(arguments);
+					});
+				m[o].l = +new Date();
+				w = e.createElement('script');
+				var e = e.scripts[0];
+				w.src = '//www.google-analytics.com/analytics.js';
+				e.parentNode.insertBefore(w, e);
+			})(window, document, 'meow');
+
+			meow('create', 'UA-71427770-1', 'brittany-harris.com');
+			meow('send', 'pageview');
+		</script>
+	</body>
+</html>
