@@ -1,4 +1,4 @@
-name: Build
+name: Deploy
 
 on:
   push:
@@ -22,3 +22,13 @@ jobs:
         run: npm run lint --if-present
       - name: Build
         run: npm run build --if-present
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.3.0
+        with:
+          keep_history: true
+          allow_empty_commit: true
+          build_dir: build
+          committer: Brittany Harris <hello@brittany-harris.com>
+          author: Brittany Harris <hello@brittany-harris.com>
+          commit_message: Update brittany-harris.com
+          jekyll: false
