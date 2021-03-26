@@ -4,6 +4,7 @@ const pkg = require('./package.json');
 const fs = require('fs');
 
 const pages = [
+	'*',
 	fs.readdirSync('_projects').map((filename) => `/projects/${filename.replace('.md', '')}`),
 	fs.readdirSync('_work').map((filename) => `/work/${filename.replace('.md', '')}`)
 ].flat();
@@ -20,6 +21,7 @@ module.exports = {
 		adapter: staticAdaptor(),
 
 		prerender: {
+			crawl: true,
 			pages
 		},
 
