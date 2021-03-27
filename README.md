@@ -25,3 +25,4 @@ sips -Z 1200 static/assets/images/**/*.png
 ```bash
 npm run build
 ```
+
