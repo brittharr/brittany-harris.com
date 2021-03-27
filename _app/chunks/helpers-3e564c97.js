@@ -1,0 +1,1 @@
+const t="Brittany Harris",a="Brittany Harris is a front end developer with a lot of feelings about cats, the internet, and cats on the internet.",e="https://brittany-harris.com",r=t=>t.replace(/\n/,"").slice(0,160);export{a as d,r as f,t,e as u};
