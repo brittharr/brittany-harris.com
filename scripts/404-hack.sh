@@ -1,0 +1,1 @@
+mv build/404-hack.html/index.html build/404.html
