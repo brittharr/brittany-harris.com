@@ -1,5 +1,8 @@
 # brittany-harris.com
 
+![CI](https://github.com/brittharr/brittharr.github.io/actions/workflows/ci.yml/badge.svg)
+![Deploy](https://github.com/brittharr/brittharr.github.io/actions/workflows/deploy.yml/badge.svg)
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:

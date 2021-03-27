@@ -18,3 +18,8 @@ jobs:
         run: npm run lint --if-present
       - name: Build
         run: npm run build --if-present
+      - name: Lighthouse
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          configPath: './lighthouserc.json'
+          uploadArtifacts: true
