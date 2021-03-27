@@ -14,6 +14,12 @@ npm run dev
 npm run dev -- --open
 ```
 
+Small assets
+
+```bash
+sips -Z 1200 static/assets/images/**/*.png
+```
+
 ## Building
 
 ```bash
