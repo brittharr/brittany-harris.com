@@ -14,23 +14,26 @@ const time = new Date();
 
 let posts = [];
 try {
-	posts = fs.readdirSync(`${root}/${POST_DIR}`).map((file) => {
-		if (file[0] === '.' || path.extname(file) !== '.md') return;
+	posts = fs
+		.readdirSync(`${root}/${POST_DIR}`)
+		.map((file) => {
+			if (file[0] === '.' || path.extname(file) !== '.md') return;
 
-		const markdown = fs.readFileSync(`${root}/${POST_DIR}/${file}`, 'utf-8');
-		const { data, content } = frontmatter(markdown);
+			const markdown = fs.readFileSync(`${root}/${POST_DIR}/${file}`, 'utf-8');
+			const { data, content } = frontmatter(markdown);
 
-		const slug = file.replace(/\.md$/, '');
+			const slug = file.replace(/\.md$/, '');
 
-		if (!data.date) data.date = slug.slice(0, 10);
+			if (!data.date) data.date = slug.slice(0, 10);
 
-		return {
-			...data,
-			content,
-			slug: slug.slice(11),
-			pubdate: new Date(data.date)
-		};
-	});
+			return {
+				...data,
+				content,
+				slug: slug.slice(11),
+				pubdate: new Date(data.date)
+			};
+		})
+		.filter((d) => d);
 } catch (err) {
 	console.log(err);
 }
