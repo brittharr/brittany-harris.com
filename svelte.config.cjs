@@ -5,6 +5,7 @@ const fs = require('fs');
 
 const pages = [
 	'*',
+	'/404.html',
 	fs.readdirSync('_projects').map((filename) => `/projects/${filename.replace('.md', '')}`),
 	fs.readdirSync('_work').map((filename) => `/work/${filename.replace('.md', '')}`)
 ].flat();

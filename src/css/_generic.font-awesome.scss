@@ -10,6 +10,10 @@
 // @import "../node_modules/font-awesome/scss/rotated-flipped";
 // @import "../node_modules/font-awesome/scss/stacked";
 
+.#{$fa-css-prefix} {
+    font-display: block;
+}
+
 /* @import "../node_modules/font-awesome/scss/icons"; */
 .#{$fa-css-prefix}-chevron-left:before { content: $fa-var-chevron-left; }
 .#{$fa-css-prefix}-chevron-right:before { content: $fa-var-chevron-right; }

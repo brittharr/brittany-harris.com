@@ -3,7 +3,7 @@
 	"version": "3.0.0",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"build": "rm -rf build && svelte-kit build",
 		"start": "svelte-kit start",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",

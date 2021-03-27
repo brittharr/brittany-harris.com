@@ -5,6 +5,9 @@ h4,
 h5,
 h6,
 p {
+    font-family: $base-font-family !important;
+    font-display: swap;
+
     & > a:not(.plain-link) {
         -webkit-transition: color 0.4s, background-image 0.4s;
                 transition: color 0.4s, background-image 0.4s;
