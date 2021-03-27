@@ -4,7 +4,21 @@
 			"staticDistDir": "./build"
 		},
 		"assert": {
-			"preset": "lighthouse:no-pwa"
+			"preset": "lighthouse:no-pwa",
+			"assertions": {
+				"canonical": "off",
+				"color-contrast": "warn",
+				"font-display": "warn",
+				"heading-order": "warn",
+				"total-byte-weight": "warn",
+				"unsized-images": "warn",
+				"uses-rel-preconnect": "warn",
+				"uses-optimized-images": "warn",
+				"uses-responsive-images": "warn"
+			}
 		}
+	},
+	"settings": {
+		"onlyCategories": ["performance", "accessibility", "best-practices", "seo"]
 	}
 }
