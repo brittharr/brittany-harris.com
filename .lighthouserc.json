@@ -1,7 +1,12 @@
 {
 	"ci": {
 		"collect": {
-			"staticDistDir": "./build"
+			"staticDistDir": "./build",
+			"url": [
+				"http://localhost/",
+				"http://localhost/work/dashboard",
+				"http://localhost/projects/pod-hotel"
+			]
 		},
 		"assert": {
 			"preset": "lighthouse:no-pwa",
