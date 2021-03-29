@@ -22,9 +22,15 @@
 </script>
 
 <script>
+	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import { url, description as defaultDesc } from '$lib/constants';
 	import { formatDescription } from '$lib/helpers';
+	import { library, dom } from '@fortawesome/fontawesome-svg-core';
+	import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
+	library.add(faChevronRight);
+	library.add(faChevronLeft);
 
 	export let displaytitle;
 	export let title;
@@ -35,6 +41,10 @@
 	$: previousWorkTitle = $$props['previous-work-title'];
 	$: nextWorkUrl = $$props['next-work-url'];
 	$: nextWorkTitle = $$props['next-work-title'];
+
+	onMount(() => {
+		dom.watch();
+	});
 </script>
 
 <svelte:head>
