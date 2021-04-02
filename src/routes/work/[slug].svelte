@@ -53,32 +53,35 @@
 	<link rel="canonical" href="{url}{$page.path}" />
 </svelte:head>
 
-<div class="page">
-	<header class="row">
-		<div class="medium-11 medium-centered columns">
-			<h2>{displaytitle ? displaytitle : title}</h2>
-			{#if technology}<h6 class="subheader"><strong>Technology: </strong>{technology}</h6>{/if}
-		</div>
-	</header>
+<header class="grid-x grid-margin-x">
+	<div class="cell">
+		<h2>{displaytitle ? displaytitle : title}</h2>
+		{#if technology}<h6 class="subheader"><strong>Technology: </strong>{technology}</h6>{/if}
+	</div>
+</header>
 
-	<article class="row">
-		<div class="medium-11 medium-centered columns">{@html content}</div>
-	</article>
+<article class="grid-x grid-margin-x">
+	<div class="cell">{@html content}</div>
+</article>
 
-	<div class="row" style="margin-top: 2rem;">
-		<div class="small-6 medium-5 medium-offset-1 columns">
-			{#if previousWorkUrl}
-				<a class="prev" href={previousWorkUrl}
-					><i class="fa fa-chevron-left" /> {previousWorkTitle}</a
-				>
-			{:else}
-				&nbsp;
-			{/if}
-		</div>
-		<div class="small-6 medium-5 columns end" style="text-align: right;">
-			{#if nextWorkUrl}
-				<a class="next" href={nextWorkUrl}>{nextWorkTitle} <i class="fa fa-chevron-right" /></a>
-			{/if}
-		</div>
+<div class="grid-x grid-margin-x navigation">
+	<div class="cell small-auto medium-4 medium-offset-1">
+		{#if previousWorkUrl}
+			<a class="prev" href={previousWorkUrl}><i class="fa fa-chevron-left" /> {previousWorkTitle}</a
+			>
+		{:else}
+			&nbsp;
+		{/if}
+	</div>
+	<div class="cell small-auto medium-4 medium-offset-1 text-right">
+		{#if nextWorkUrl}
+			<a class="next" href={nextWorkUrl}>{nextWorkTitle} <i class="fa fa-chevron-right" /></a>
+		{/if}
 	</div>
 </div>
+
+<style lang="scss">
+	.navigation {
+		@include margin(2, null, null, null);
+	}
+</style>

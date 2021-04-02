@@ -25,7 +25,6 @@
 </script>
 
 <script>
-	import { onMount } from 'svelte';
 	import { description, title, url } from '$lib/constants';
 	import { formatDescription } from '$lib/helpers';
 	import GraphicsList from './_graphics-list.svelte';
@@ -36,14 +35,6 @@
 	$: evergreens = display_graphics.filter((d) => d.category === 'evergreen');
 	$: events = display_graphics.filter((d) => d.category === 'event');
 	$: stories = display_graphics.filter((d) => d.category === 'story');
-
-	onMount(() => {
-		document.body.classList.add('--home');
-
-		return () => {
-			document.body.classList.remove('--home');
-		};
-	});
 </script>
 
 <svelte:head>
@@ -52,11 +43,11 @@
 	<link rel="canonical" href={url} />
 </svelte:head>
 
-<div class="row" style="margin-bottom: 1rem;">
-	<div class="medium-2 medium-offset-1 columns medium-text-right column-label">
-		<h6 style="line-height: 1;">Bloomberg Graphics</h6>
+<div class="grid-x grid-margin-x">
+	<div class="medium-2 medium-offset-1 cell medium-text-right column-label">
+		<h2 class="h6">Bloomberg Graphics</h2>
 	</div>
-	<div class="medium-8 columns end">
+	<div class="cell medium-8">
 		<p>
 			My work at Bloomberg is varied and covers everything from publishing infrastructure and
 			templating to breaking news graphics. I've munged data and created flexible interactive charts
@@ -74,14 +65,14 @@
 		</p>
 	</div>
 </div>
-<div class="row" style="margin-bottom: 1rem;">
-	<div class="medium-2 medium-offset-1 columns medium-text-right column-label">
-		<h6 style="line-height: 1;">Prior Consulting Work</h6>
+<div class="grid-x grid-margin-x">
+	<div class="medium-2 medium-offset-1 cell medium-text-right column-label">
+		<h2 class="h6">Prior Consulting Work</h2>
 	</div>
-	<div class="medium-8 columns end">
-		<div class="row small-up-2 large-up-3">
+	<div class="cell medium-8">
+		<div class="grid-x grid-margin-x small-up-2 medium-up-3">
 			{#each work as page}
-				<div class="column" style="margin-bottom: 1rem;">
+				<div class="cell">
 					<a class="post-link" href={page.url} title={page.title}
 						><img src={page['thumbnail-url']} alt={page.title} /></a
 					>
@@ -90,3 +81,21 @@
 		</div>
 	</div>
 </div>
+
+<style lang="scss">
+	.h6 {
+		line-height: 1;
+	}
+
+	.column-label {
+		text-transform: uppercase;
+	}
+
+	.grid-x {
+		@include margin(1, null, null, null);
+	}
+
+	.post-link > img {
+		margin-bottom: 0.9375rem * 2;
+	}
+</style>

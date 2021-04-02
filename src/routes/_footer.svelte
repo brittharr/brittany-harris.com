@@ -20,52 +20,65 @@
 	});
 </script>
 
-<footer class="row">
-	<div class="medium-centered columns">
-		<ul class="social-media-list">
+<footer>
+	<ul>
+		<li>
+			<a href="/assets/cv/brittanyharris-resume.pdf" target="_blank">
+				<i class="far fa-file-alt" title="Resume" /></a
+			>
+		</li>
+
+		{#if github_username}
 			<li>
-				<a href="/assets/cv/brittanyharris-resume.pdf" target="_blank">
-					<i class="far fa-file-alt" title="Resume" /></a
+				<a href="https://github.com/{github_username}" target="_blank" rel="noopener">
+					<i class="fab fa-github" title="Github" /></a
 				>
 			</li>
+		{/if}
 
-			{#if github_username}
-				<li>
-					<a href="https://github.com/{github_username}" target="_blank" rel="noopener">
-						<i class="fab fa-github" title="Github" /></a
-					>
-				</li>
-			{/if}
+		{#if twitter_username}
+			<li>
+				<a href="https://twitter.com/{twitter_username}" target="_blank" rel="noopener">
+					<i class="fab fa-twitter" title="Twitter" /></a
+				>
+			</li>
+		{/if}
 
-			{#if twitter_username}
-				<li>
-					<a href="https://twitter.com/{twitter_username}" target="_blank" rel="noopener">
-						<i class="fab fa-twitter" title="Twitter" /></a
-					>
-				</li>
-			{/if}
+		{#if linkedin_username}
+			<li>
+				<a href="https://linkedin.com/in/{linkedin_username}" target="_blank" rel="noopener">
+					<i class="fab fa-linkedin" title="Linkedin" /></a
+				>
+			</li>
+		{/if}
 
-			{#if linkedin_username}
-				<li>
-					<a href="https://linkedin.com/in/{linkedin_username}" target="_blank" rel="noopener">
-						<i class="fab fa-linkedin" title="Linkedin" /></a
-					>
-				</li>
-			{/if}
-
-			{#if instagram_username}
-				<li>
-					<a href="https://instagram.com/{instagram_username}" target="_blank" rel="noopener">
-						<i class="fab fa-instagram" title="Instagram" /></a
-					>
-				</li>
-			{/if}
-		</ul>
-	</div>
+		{#if instagram_username}
+			<li>
+				<a href="https://instagram.com/{instagram_username}" target="_blank" rel="noopener">
+					<i class="fab fa-instagram" title="Instagram" /></a
+				>
+			</li>
+		{/if}
+	</ul>
 </footer>
 
 <style lang="scss">
-	.social-media-list {
+	footer {
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	ul {
 		color: $primary-color;
+		font-size: 1.4rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 10px;
+		}
 	}
 </style>

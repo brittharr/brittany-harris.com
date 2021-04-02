@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import frontmatter from '@github-docs/frontmatter';
 import marked from 'marked';
+import { description } from '$lib/constants';
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
@@ -20,6 +21,8 @@ export async function get({ params }) {
 		console.log('!', slug, errors);
 		return null;
 	}
+
+	if (!data.description) data.description = description;
 
 	return {
 		body: {
