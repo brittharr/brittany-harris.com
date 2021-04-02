@@ -36,21 +36,19 @@
 	<link rel="canonical" href="{url}{$page.path}" />
 </svelte:head>
 
-<div class="row">
-	<h6 class="subheader medium-11 medium-centered columns">
+<div class="grid-x grid-margin-x">
+	<h6 class="cell subheader">
 		Hey! Thanks for visiting. This is an older project that I worked on while in school. If you want
 		to see what I've been up to recently, <a href="/">visit my new homepage.</a>
 	</h6>
 </div>
 
-<div class="page">
-	<header class="row">
-		<div class="medium-11 medium-centered columns">
-			<h2>{title}</h2>
-		</div>
-	</header>
+<header class="grid-x grid-margin-x">
+	<div class="cell">
+		<h2>{title}</h2>
+	</div>
+</header>
 
-	<article class="row">
-		<div class="medium-11 medium-centered columns">{@html content}</div>
-	</article>
-</div>
+<article class="grid-x grid-margin-x">
+	<div class="cell">{@html content}</div>
+</article>

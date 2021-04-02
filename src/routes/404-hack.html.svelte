@@ -8,14 +8,14 @@
 </script>
 
 <div class="page">
-	<header class="row">
-		<div class="medium-11 medium-centered columns">
+	<header class="grid-x grid-margin-x">
+		<div class="cell">
 			<h2>{status} {getReasonPhrase(status)}</h2>
 		</div>
 	</header>
 
-	<article class="row">
-		<div class="medium-11 medium-centered columns">
+	<article class="grid-x grid-margin-x">
+		<div class="cell">
 			{@html message}
 		</div>
 	</article>

@@ -1,6 +1,15 @@
-$text-color:       #322E46;
-$background-color: #fefefe;
+@import 'foundation-sites/scss/util/_util.scss';
 
-$primary-color:    #990E46;
-$secondary-color:  #FA8B77;
-$tertiary-color:   #ACBCBE;
+$body-font-color: #322E46;
+$body-background: #FEFEFE;
+
+$foundation-palette: (
+  primary: #990E46,
+  secondary: #FA8B77,
+  tertiary: #ACBCBE,
+
+  success: #3ADB76,
+  warning: #FFAE00,
+  alert: #CC4B37,
+);
+@include add-foundation-colors;

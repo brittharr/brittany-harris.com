@@ -10,8 +10,8 @@ next-work-url: /work/dashboard
 next-work-title: BI Dashboard
 ---
 
-<div class="row">
-    <div class="medium-6 columns">
+<div class="grid-x grid-margin-x">
+    <div class="cell medium-auto">
         <p>I’m super into automated reporting as a route to efficiency (and as a challenge); this project is where I caught the bug. <a href="https://www.bnymellon.com/">BNY Mellon</a> does an investor relations survey every year and wanted to publish a huge variety of aggregations of the collected data (without the corresponding amount of design production time it had required in the past). My interdisciplinary team at <a href="http://www.boostlabs.com/">Boost Labs</a> came up with a plan based on the Region, Industry, and Company breakdowns that BNY requested to standardize the data groupings and comparisons and enable us to use 10 templated chart types to display every survey question for every breakdown.</p>
         <p>We used <a href="http://d3js.org/">D3</a> to generate the charts in-browser as svg elements, then downloaded the generated report and used it as a support for the InDesign document required by the BNY team.</p>
         <h4>Results</h4>
@@ -19,7 +19,7 @@ next-work-title: BI Dashboard
         <p>BNY returned to Boost Labs for production of the 2015 survey results, and after a small number of adjustments necessitated by updated brand guidelines, we were able to easily produce and deliver this year’s batch of reports.</p>
         <img src="/assets/images/case-studies/bny/bny9.png" alt="700 Benchmark Reports">
     </div>
-    <div class="medium-6 columns">
+    <div class="cell medium-auto">
         <img src="/assets/images/case-studies/bny/bny10.png" alt="700 Benchmark Reports">
         <h4>Similar Projects</h4>
         <p>Based on our experience with the automated reporting tool for BNY, we’ve created similar automated tools for other clients. There has been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I’ve really enjoyed continuing down the path of chart templatization.</p>

@@ -12,19 +12,18 @@ const pages = [
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
-	// Consult https://github.com/sveltejs/svelte-preprocess
-	// for more information about preprocessors
 	preprocess: sveltePreprocess({
 		scss: {
-			includePaths: ['src/css'],
-			prependData: `@import 'settings.colors';
-@import 'settings.global';`
+			includePaths: ['src/css', 'node_modules/foundation-sites/scss'],
+			prependData: `
+@import 'settings.colors';
+@import 'settings.global';
+@import 'settings/settings';
+@import 'prototype/prototype';
+`
 		}
 	}),
 	kit: {
-		// By default, `npm run build` will create a standard Node app.
-		// You can create optimized builds for different platforms by
-		// specifying a different adapter
 		adapter: staticAdaptor(),
 
 		prerender: {
@@ -32,7 +31,6 @@ module.exports = {
 			pages
 		},
 
-		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 
 		vite: {
