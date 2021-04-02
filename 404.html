@@ -18,56 +18,61 @@
 
 
 
-<link rel="modulepreload" href="/./_app/start-80013b1d.js">
-			<link rel="modulepreload" href="/./_app/chunks/index-1610c520.js">
+<link rel="modulepreload" href="/./_app/start-bc014fd0.js">
+			<link rel="modulepreload" href="/./_app/chunks/vendor-e252698f.js">
 			<link rel="modulepreload" href="/./_app/chunks/utils-functions-4c55b8b8.js">
 			<link rel="modulepreload" href="/./_app/chunks/index.es-62724c91.js">
-			<link rel="modulepreload" href="/./_app/pages/404-hack.html.svelte-6038bc92.js">
-			<link rel="stylesheet" href="/./_app/assets/start-1f6294df.css">
+			<link rel="modulepreload" href="/./_app/pages/404-hack.html.svelte-b2ff0429.js">
+			<link rel="stylesheet" href="/./_app/assets/start-f4182ae5.css">
 
 
 		<script type="module">
-			import { start } from "/./_app/start-80013b1d.js";
+			import { start } from "/./_app/start-bc014fd0.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
-				status: 200,
-				error: null,
 				session: {},
-				nodes: [
-					import("/./_app/pages/404-hack.html.svelte-6038bc92.js")
-				],
-				page: {
-					host: "location.host",
-					path: "/404-hack.html",
-					query: new URLSearchParams(""),
-					params: {}
+				host: location.host,
+				route: true,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/404-hack.html.svelte-b2ff0429.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/404-hack.html",
+						query: new URLSearchParams(""),
+						params: {}
+					}
 				}
 			});
 		</script>
 	</head>
-	<body class="page">
-		<div id="svelte">
+	<body>
+		<div id="svelte" class="grid-container">
 
 
-<header class="page-header row"><div class="medium-11 medium-centered columns medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div></header>
+<header class="grid-x grid-margin-x svelte-a6goq6"><div class="medium-11  cell medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div>
+</header>
 
-<div class="page-content"><div class="wrapper">
+<main>
 
 
-<div class="page"><header class="row"><div class="medium-11 medium-centered columns"><h2>404 Not Found</h2></div></header>
+<div class="page"><header class="grid-x grid-margin-x"><div class="cell"><h2>404 Not Found</h2></div></header>
 
-	<article class="row"><div class="medium-11 medium-centered columns">Uh Oh! Did you want to look at some cool <a href="/work/bny-reports">automated reports</a> instead of this blank page?</div></article></div></div></div>
+	<article class="grid-x grid-margin-x"><div class="cell">Uh Oh! Did you want to look at some cool <a href="/work/bny-reports">automated reports</a> instead of this blank page?</div></article></div></main>
 
-<footer class="row"><div class="medium-centered columns"><ul class="social-media-list svelte-162hlmi"><li><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank"><i class="far fa-file-alt" title="Resume"></i></a></li>
+<footer class="svelte-17mr52v"><ul class="svelte-17mr52v"><li class="svelte-17mr52v"><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank"><i class="far fa-file-alt" title="Resume"></i></a></li>
 
-	<li><a href="https://github.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-github" title="Github"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://github.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-github" title="Github"></i></a></li>
 
-	<li><a href="https://twitter.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://twitter.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
 
-	<li><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener"><i class="fab fa-linkedin" title="Linkedin"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener"><i class="fab fa-linkedin" title="Linkedin"></i></a></li>
 
-	<li><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener"><i class="fab fa-instagram" title="Instagram"></i></a></li></ul></div>
+<li class="svelte-17mr52v"><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener"><i class="fab fa-instagram" title="Instagram"></i></a></li></ul>
 </footer>
 
 

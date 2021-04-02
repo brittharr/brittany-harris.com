@@ -18,49 +18,55 @@
 
 
 
-<link rel="modulepreload" href="/./_app/start-80013b1d.js">
-			<link rel="modulepreload" href="/./_app/chunks/index-1610c520.js">
+<link rel="modulepreload" href="/./_app/start-bc014fd0.js">
+			<link rel="modulepreload" href="/./_app/chunks/vendor-e252698f.js">
 			<link rel="modulepreload" href="/./_app/chunks/utils-functions-4c55b8b8.js">
 			<link rel="modulepreload" href="/./_app/chunks/index.es-62724c91.js">
-			<link rel="modulepreload" href="/./_app/pages/work/[slug].svelte-16345fbd.js">
-			<link rel="modulepreload" href="/./_app/chunks/stores-286a2a37.js">
+			<link rel="modulepreload" href="/./_app/pages/work/[slug].svelte-92c587df.js">
+			<link rel="modulepreload" href="/./_app/chunks/stores-ab458f09.js">
 			<link rel="modulepreload" href="/./_app/chunks/helpers-3e564c97.js">
-			<link rel="stylesheet" href="/./_app/assets/start-1f6294df.css">
+			<link rel="stylesheet" href="/./_app/assets/start-f4182ae5.css">
+			<link rel="stylesheet" href="/./_app/assets/pages/work/[slug].svelte-329f0fca.css">
 
 
 		<script type="module">
-			import { start } from "/./_app/start-80013b1d.js";
+			import { start } from "/./_app/start-bc014fd0.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
-				status: 200,
-				error: null,
 				session: {},
-				nodes: [
-					import("/./_app/pages/work/[slug].svelte-16345fbd.js")
-				],
-				page: {
-					host: "location.host",
-					path: "/work/bny-reports",
-					query: new URLSearchParams(""),
-					params: {"slug":"bny-reports"}
+				host: location.host,
+				route: true,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/work/[slug].svelte-92c587df.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/work/bny-reports",
+						query: new URLSearchParams(""),
+						params: {"slug":"bny-reports"}
+					}
 				}
 			});
 		</script>
 	</head>
-	<body class="page">
-		<div id="svelte">
+	<body>
+		<div id="svelte" class="grid-container">
 
 
-<header class="page-header row"><div class="medium-11 medium-centered columns medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div></header>
+<header class="grid-x grid-margin-x svelte-a6goq6"><div class="medium-11  cell medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div>
+</header>
 
-<div class="page-content"><div class="wrapper">
+<main>
 
-<div class="page"><header class="row"><div class="medium-11 medium-centered columns"><h2>Automated Reports for BNY Mellon</h2>
-	<h6 class="subheader"><strong>Technology: </strong>D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf</h6></div></header>
+<header class="grid-x grid-margin-x"><div class="cell"><h2>Automated Reports for BNY Mellon</h2>
+<h6 class="subheader"><strong>Technology: </strong>D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf</h6></div></header>
 
-	<article class="row"><div class="medium-11 medium-centered columns"><div class="row">
-    <div class="medium-6 columns">
+<article class="grid-x grid-margin-x"><div class="cell"><div class="grid-x grid-margin-x">
+    <div class="cell medium-auto">
         <p>I’m super into automated reporting as a route to efficiency (and as a challenge); this project is where I caught the bug. <a href="https://www.bnymellon.com/">BNY Mellon</a> does an investor relations survey every year and wanted to publish a huge variety of aggregations of the collected data (without the corresponding amount of design production time it had required in the past). My interdisciplinary team at <a href="http://www.boostlabs.com/">Boost Labs</a> came up with a plan based on the Region, Industry, and Company breakdowns that BNY requested to standardize the data groupings and comparisons and enable us to use 10 templated chart types to display every survey question for every breakdown.</p>
         <p>We used <a href="http://d3js.org/">D3</a> to generate the charts in-browser as svg elements, then downloaded the generated report and used it as a support for the InDesign document required by the BNY team.</p>
         <h4>Results</h4>
@@ -68,7 +74,7 @@
         <p>BNY returned to Boost Labs for production of the 2015 survey results, and after a small number of adjustments necessitated by updated brand guidelines, we were able to easily produce and deliver this year’s batch of reports.</p>
         <img src="/assets/images/case-studies/bny/bny9.png" alt="700 Benchmark Reports">
     </div>
-    <div class="medium-6 columns">
+    <div class="cell medium-auto">
         <img src="/assets/images/case-studies/bny/bny10.png" alt="700 Benchmark Reports">
         <h4>Similar Projects</h4>
         <p>Based on our experience with the automated reporting tool for BNY, we’ve created similar automated tools for other clients. There has been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I’ve really enjoyed continuing down the path of chart templatization.</p>
@@ -78,23 +84,24 @@
 
 </div></article>
 
-	<div class="row" style="margin-top: 2rem;"><div class="small-6 medium-5 medium-offset-1 columns"> </div>
-<div class="small-6 medium-5 columns end" style="text-align: right;"><a class="next" href="/work/dashboard">BI Dashboard <i class="fa fa-chevron-right"></i></a></div></div></div></div></div>
+<div class="grid-x grid-margin-x navigation svelte-fu3t7p"><div class="cell small-auto medium-4 medium-offset-1"> </div>
+	<div class="cell small-auto medium-4 medium-offset-1 text-right"><a class="next" href="/work/dashboard">BI Dashboard <i class="fa fa-chevron-right"></i></a></div>
+</div></main>
 
-<footer class="row"><div class="medium-centered columns"><ul class="social-media-list svelte-162hlmi"><li><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank"><i class="far fa-file-alt" title="Resume"></i></a></li>
+<footer class="svelte-17mr52v"><ul class="svelte-17mr52v"><li class="svelte-17mr52v"><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank"><i class="far fa-file-alt" title="Resume"></i></a></li>
 
-	<li><a href="https://github.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-github" title="Github"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://github.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-github" title="Github"></i></a></li>
 
-	<li><a href="https://twitter.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://twitter.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
 
-	<li><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener"><i class="fab fa-linkedin" title="Linkedin"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener"><i class="fab fa-linkedin" title="Linkedin"></i></a></li>
 
-	<li><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener"><i class="fab fa-instagram" title="Instagram"></i></a></li></ul></div>
+<li class="svelte-17mr52v"><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener"><i class="fab fa-instagram" title="Instagram"></i></a></li></ul>
 </footer>
 
 
 
-	<script type="svelte-data" url="/api/work/bny-reports.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"layout\":\"work\",\"title\":\"Automated Reports\",\"displaytitle\":\"Automated Reports for BNY Mellon\",\"description\":\"This is a data visualization, report automation system from D3 append to PDF export.\",\"technology\":\"D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf\",\"thumbnail-url\":\"/assets/images/case-studies/bny/thumbnail.jpg\",\"next-work-url\":\"/work/dashboard\",\"next-work-title\":\"BI Dashboard\",\"content\":\"<div class=\\\"row\\\">\\n    <div class=\\\"medium-6 columns\\\">\\n        <p>I’m super into automated reporting as a route to efficiency (and as a challenge); this project is where I caught the bug. <a href=\\\"https://www.bnymellon.com/\\\">BNY Mellon</a> does an investor relations survey every year and wanted to publish a huge variety of aggregations of the collected data (without the corresponding amount of design production time it had required in the past). My interdisciplinary team at <a href=\\\"http://www.boostlabs.com/\\\">Boost Labs</a> came up with a plan based on the Region, Industry, and Company breakdowns that BNY requested to standardize the data groupings and comparisons and enable us to use 10 templated chart types to display every survey question for every breakdown.</p>\\n        <p>We used <a href=\\\"http://d3js.org/\\\">D3</a> to generate the charts in-browser as svg elements, then downloaded the generated report and used it as a support for the InDesign document required by the BNY team.</p>\\n        <h4>Results</h4>\\n        <p>For the 2013 survey (published in 2014), we automated the production of reports for over 700 individual companies, 11 industries, and 9 regions (plus 3 translations). Although development of the process took ~3 months, the final report production took more like 3 days.</p>\\n        <p>BNY returned to Boost Labs for production of the 2015 survey results, and after a small number of adjustments necessitated by updated brand guidelines, we were able to easily produce and deliver this year’s batch of reports.</p>\\n        <img src=\\\"/assets/images/case-studies/bny/bny9.png\\\" alt=\\\"700 Benchmark Reports\\\">\\n    </div>\\n    <div class=\\\"medium-6 columns\\\">\\n        <img src=\\\"/assets/images/case-studies/bny/bny10.png\\\" alt=\\\"700 Benchmark Reports\\\">\\n        <h4>Similar Projects</h4>\\n        <p>Based on our experience with the automated reporting tool for BNY, we’ve created similar automated tools for other clients. There has been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I’ve really enjoyed continuing down the path of chart templatization.</p>\\n        <p>One particular project had more custom and complex spread layouts (as well as data that is more variable than survey responses), so we began using Backbone.js as an MVC framework for viewing charts within each page. For full “export to PDF” functionality we use wkhtmltopdf, bypassing the previous need for InDesign and post-processing.</p>\\n    </div>\\n</div>\\n\\n\"}"}</script>
+	<script type="svelte-data" url="/api/work/bny-reports.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"layout\":\"work\",\"title\":\"Automated Reports\",\"displaytitle\":\"Automated Reports for BNY Mellon\",\"description\":\"This is a data visualization, report automation system from D3 append to PDF export.\",\"technology\":\"D3.js, Adobe Illustrator, Backbone.js, wkhtmltopdf\",\"thumbnail-url\":\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fbny\u002Fthumbnail.jpg\",\"next-work-url\":\"\u002Fwork\u002Fdashboard\",\"next-work-title\":\"BI Dashboard\",\"content\":\"\u003Cdiv class=\\\"grid-x grid-margin-x\\\"\u003E\\n    \u003Cdiv class=\\\"cell medium-auto\\\"\u003E\\n        \u003Cp\u003EI’m super into automated reporting as a route to efficiency (and as a challenge); this project is where I caught the bug. \u003Ca href=\\\"https:\u002F\u002Fwww.bnymellon.com\u002F\\\"\u003EBNY Mellon\u003C\u002Fa\u003E does an investor relations survey every year and wanted to publish a huge variety of aggregations of the collected data (without the corresponding amount of design production time it had required in the past). My interdisciplinary team at \u003Ca href=\\\"http:\u002F\u002Fwww.boostlabs.com\u002F\\\"\u003EBoost Labs\u003C\u002Fa\u003E came up with a plan based on the Region, Industry, and Company breakdowns that BNY requested to standardize the data groupings and comparisons and enable us to use 10 templated chart types to display every survey question for every breakdown.\u003C\u002Fp\u003E\\n        \u003Cp\u003EWe used \u003Ca href=\\\"http:\u002F\u002Fd3js.org\u002F\\\"\u003ED3\u003C\u002Fa\u003E to generate the charts in-browser as svg elements, then downloaded the generated report and used it as a support for the InDesign document required by the BNY team.\u003C\u002Fp\u003E\\n        \u003Ch4\u003EResults\u003C\u002Fh4\u003E\\n        \u003Cp\u003EFor the 2013 survey (published in 2014), we automated the production of reports for over 700 individual companies, 11 industries, and 9 regions (plus 3 translations). Although development of the process took ~3 months, the final report production took more like 3 days.\u003C\u002Fp\u003E\\n        \u003Cp\u003EBNY returned to Boost Labs for production of the 2015 survey results, and after a small number of adjustments necessitated by updated brand guidelines, we were able to easily produce and deliver this year’s batch of reports.\u003C\u002Fp\u003E\\n        \u003Cimg src=\\\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fbny\u002Fbny9.png\\\" alt=\\\"700 Benchmark Reports\\\"\u003E\\n    \u003C\u002Fdiv\u003E\\n    \u003Cdiv class=\\\"cell medium-auto\\\"\u003E\\n        \u003Cimg src=\\\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fbny\u002Fbny10.png\\\" alt=\\\"700 Benchmark Reports\\\"\u003E\\n        \u003Ch4\u003ESimilar Projects\u003C\u002Fh4\u003E\\n        \u003Cp\u003EBased on our experience with the automated reporting tool for BNY, we’ve created similar automated tools for other clients. There has been some re-architecture and refactoring based on lessons learned, new requirements, and other refinements, but I’ve really enjoyed continuing down the path of chart templatization.\u003C\u002Fp\u003E\\n        \u003Cp\u003EOne particular project had more custom and complex spread layouts (as well as data that is more variable than survey responses), so we began using Backbone.js as an MVC framework for viewing charts within each page. For full “export to PDF” functionality we use wkhtmltopdf, bypassing the previous need for InDesign and post-processing.\u003C\u002Fp\u003E\\n    \u003C\u002Fdiv\u003E\\n\u003C\u002Fdiv\u003E\\n\\n\"}"}</script>
 </div>
 
 		<script src="//use.typekit.net/bgd7tvd.js"></script>

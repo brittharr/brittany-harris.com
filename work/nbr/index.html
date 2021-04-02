@@ -18,54 +18,60 @@
 
 
 
-<link rel="modulepreload" href="/./_app/start-80013b1d.js">
-			<link rel="modulepreload" href="/./_app/chunks/index-1610c520.js">
+<link rel="modulepreload" href="/./_app/start-bc014fd0.js">
+			<link rel="modulepreload" href="/./_app/chunks/vendor-e252698f.js">
 			<link rel="modulepreload" href="/./_app/chunks/utils-functions-4c55b8b8.js">
 			<link rel="modulepreload" href="/./_app/chunks/index.es-62724c91.js">
-			<link rel="modulepreload" href="/./_app/pages/work/[slug].svelte-16345fbd.js">
-			<link rel="modulepreload" href="/./_app/chunks/stores-286a2a37.js">
+			<link rel="modulepreload" href="/./_app/pages/work/[slug].svelte-92c587df.js">
+			<link rel="modulepreload" href="/./_app/chunks/stores-ab458f09.js">
 			<link rel="modulepreload" href="/./_app/chunks/helpers-3e564c97.js">
-			<link rel="stylesheet" href="/./_app/assets/start-1f6294df.css">
+			<link rel="stylesheet" href="/./_app/assets/start-f4182ae5.css">
+			<link rel="stylesheet" href="/./_app/assets/pages/work/[slug].svelte-329f0fca.css">
 
 
 		<script type="module">
-			import { start } from "/./_app/start-80013b1d.js";
+			import { start } from "/./_app/start-bc014fd0.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
-				status: 200,
-				error: null,
 				session: {},
-				nodes: [
-					import("/./_app/pages/work/[slug].svelte-16345fbd.js")
-				],
-				page: {
-					host: "location.host",
-					path: "/work/nbr",
-					query: new URLSearchParams(""),
-					params: {"slug":"nbr"}
+				host: location.host,
+				route: true,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/work/[slug].svelte-92c587df.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/work/nbr",
+						query: new URLSearchParams(""),
+						params: {"slug":"nbr"}
+					}
 				}
 			});
 		</script>
 	</head>
-	<body class="page">
-		<div id="svelte">
+	<body>
+		<div id="svelte" class="grid-container">
 
 
-<header class="page-header row"><div class="medium-11 medium-centered columns medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div></header>
+<header class="grid-x grid-margin-x svelte-a6goq6"><div class="medium-11  cell medium-text-right"><h1><a href="/" class="plain-link">Brittany Harris.</a></h1></div>
+</header>
 
-<div class="page-content"><div class="wrapper">
+<main>
 
-<div class="page"><header class="row"><div class="medium-11 medium-centered columns"><h2>NBR Modular Visualizations</h2>
-	<h6 class="subheader"><strong>Technology: </strong>SVG, D3.js, Grunt</h6></div></header>
+<header class="grid-x grid-margin-x"><div class="cell"><h2>NBR Modular Visualizations</h2>
+<h6 class="subheader"><strong>Technology: </strong>SVG, D3.js, Grunt</h6></div></header>
 
-	<article class="row"><div class="medium-11 medium-centered columns"><div class="row">
-    <div class="medium-6 medium-push-6 columns">
+<article class="grid-x grid-margin-x"><div class="cell"><div class="grid-x grid-margin-x">
+    <div class="cell medium-auto medium-order-2">
         <p>The <a href="http://www.nbr.org/">National Bureau of Asian Research (NBR)</a> came to <a href="http://www.boostlabs.com">Boost Labs</a> looking for a visualization that would support their recent survey activity in Pakistan by enhancing the transparency and availability of their data.</p>
         <p>Our solution, architected by an inter-disciplinary team of designers and developers, was a set of interactive charts that enabled users to view each data source from multiple angles (NBR was especially interested in seeing the data for Pakistan as a country and when broken down by region). We leveraged D3, Sass, and some PHP to build the interactive chart modules that NBR has been able to embed in the Wordpress websites that they use to publicize their results.</p>
         <img src="/assets/images/case-studies/nbr/survey.png" alt="Stacked Bar Charts of Survey Answers">
     </div>
-    <div class="medium-6 medium-pull-6 columns">
+    <div class="cell medium-auto medium-order-1">
         <img src="/assets/images/case-studies/nbr/violence.gif" alt="Heat Map of Pakistan Violence Data Over Time">
         <img src="/assets/images/case-studies/nbr/social.jpg" alt="Heat Map and Bar Chart of Social Indicators">
     </div>
@@ -74,23 +80,24 @@
 
 </div></article>
 
-	<div class="row" style="margin-top: 2rem;"><div class="small-6 medium-5 medium-offset-1 columns"><a class="prev" href="/work/dashboard"><i class="fa fa-chevron-left"></i> BI Dashboard</a></div>
-<div class="small-6 medium-5 columns end" style="text-align: right;"><a class="next" href="/work/qedooo">D3 Based Charting Library <i class="fa fa-chevron-right"></i></a></div></div></div></div></div>
+<div class="grid-x grid-margin-x navigation svelte-fu3t7p"><div class="cell small-auto medium-4 medium-offset-1"><a class="prev" href="/work/dashboard"><i class="fa fa-chevron-left"></i> BI Dashboard</a></div>
+	<div class="cell small-auto medium-4 medium-offset-1 text-right"><a class="next" href="/work/qedooo">D3 Based Charting Library <i class="fa fa-chevron-right"></i></a></div>
+</div></main>
 
-<footer class="row"><div class="medium-centered columns"><ul class="social-media-list svelte-162hlmi"><li><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank"><i class="far fa-file-alt" title="Resume"></i></a></li>
+<footer class="svelte-17mr52v"><ul class="svelte-17mr52v"><li class="svelte-17mr52v"><a href="/assets/cv/brittanyharris-resume.pdf" target="_blank"><i class="far fa-file-alt" title="Resume"></i></a></li>
 
-	<li><a href="https://github.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-github" title="Github"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://github.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-github" title="Github"></i></a></li>
 
-	<li><a href="https://twitter.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://twitter.com/brittharr" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
 
-	<li><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener"><i class="fab fa-linkedin" title="Linkedin"></i></a></li>
+<li class="svelte-17mr52v"><a href="https://linkedin.com/in/brittharr" target="_blank" rel="noopener"><i class="fab fa-linkedin" title="Linkedin"></i></a></li>
 
-	<li><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener"><i class="fab fa-instagram" title="Instagram"></i></a></li></ul></div>
+<li class="svelte-17mr52v"><a href="https://instagram.com/brittharr_" target="_blank" rel="noopener"><i class="fab fa-instagram" title="Instagram"></i></a></li></ul>
 </footer>
 
 
 
-	<script type="svelte-data" url="/api/work/nbr.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"layout\":\"work\",\"title\":\"Modular Visualizations\",\"displaytitle\":\"NBR Modular Visualizations\",\"description\":\"Animations! Slicing and dicing data! These interactive D3 visualizations compare data points across time, space, and dimension.\",\"technology\":\"SVG, D3.js, Grunt\",\"thumbnail-url\":\"/assets/images/case-studies/nbr/thumbnail.jpg\",\"next-work-url\":\"/work/qedooo\",\"next-work-title\":\"D3 Based Charting Library\",\"previous-work-url\":\"/work/dashboard\",\"previous-work-title\":\"BI Dashboard\",\"content\":\"<div class=\\\"row\\\">\\n    <div class=\\\"medium-6 medium-push-6 columns\\\">\\n        <p>The <a href=\\\"http://www.nbr.org/\\\">National Bureau of Asian Research (NBR)</a> came to <a href=\\\"http://www.boostlabs.com\\\">Boost Labs</a> looking for a visualization that would support their recent survey activity in Pakistan by enhancing the transparency and availability of their data.</p>\\n        <p>Our solution, architected by an inter-disciplinary team of designers and developers, was a set of interactive charts that enabled users to view each data source from multiple angles (NBR was especially interested in seeing the data for Pakistan as a country and when broken down by region). We leveraged D3, Sass, and some PHP to build the interactive chart modules that NBR has been able to embed in the Wordpress websites that they use to publicize their results.</p>\\n        <img src=\\\"/assets/images/case-studies/nbr/survey.png\\\" alt=\\\"Stacked Bar Charts of Survey Answers\\\">\\n    </div>\\n    <div class=\\\"medium-6 medium-pull-6 columns\\\">\\n        <img src=\\\"/assets/images/case-studies/nbr/violence.gif\\\" alt=\\\"Heat Map of Pakistan Violence Data Over Time\\\">\\n        <img src=\\\"/assets/images/case-studies/nbr/social.jpg\\\" alt=\\\"Heat Map and Bar Chart of Social Indicators\\\">\\n    </div>\\n</div>\\n\\n\\n\"}"}</script>
+	<script type="svelte-data" url="/api/work/nbr.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"layout\":\"work\",\"title\":\"Modular Visualizations\",\"displaytitle\":\"NBR Modular Visualizations\",\"description\":\"Animations! Slicing and dicing data! These interactive D3 visualizations compare data points across time, space, and dimension.\",\"technology\":\"SVG, D3.js, Grunt\",\"thumbnail-url\":\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fnbr\u002Fthumbnail.jpg\",\"next-work-url\":\"\u002Fwork\u002Fqedooo\",\"next-work-title\":\"D3 Based Charting Library\",\"previous-work-url\":\"\u002Fwork\u002Fdashboard\",\"previous-work-title\":\"BI Dashboard\",\"content\":\"\u003Cdiv class=\\\"grid-x grid-margin-x\\\"\u003E\\n    \u003Cdiv class=\\\"cell medium-auto medium-order-2\\\"\u003E\\n        \u003Cp\u003EThe \u003Ca href=\\\"http:\u002F\u002Fwww.nbr.org\u002F\\\"\u003ENational Bureau of Asian Research (NBR)\u003C\u002Fa\u003E came to \u003Ca href=\\\"http:\u002F\u002Fwww.boostlabs.com\\\"\u003EBoost Labs\u003C\u002Fa\u003E looking for a visualization that would support their recent survey activity in Pakistan by enhancing the transparency and availability of their data.\u003C\u002Fp\u003E\\n        \u003Cp\u003EOur solution, architected by an inter-disciplinary team of designers and developers, was a set of interactive charts that enabled users to view each data source from multiple angles (NBR was especially interested in seeing the data for Pakistan as a country and when broken down by region). We leveraged D3, Sass, and some PHP to build the interactive chart modules that NBR has been able to embed in the Wordpress websites that they use to publicize their results.\u003C\u002Fp\u003E\\n        \u003Cimg src=\\\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fnbr\u002Fsurvey.png\\\" alt=\\\"Stacked Bar Charts of Survey Answers\\\"\u003E\\n    \u003C\u002Fdiv\u003E\\n    \u003Cdiv class=\\\"cell medium-auto medium-order-1\\\"\u003E\\n        \u003Cimg src=\\\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fnbr\u002Fviolence.gif\\\" alt=\\\"Heat Map of Pakistan Violence Data Over Time\\\"\u003E\\n        \u003Cimg src=\\\"\u002Fassets\u002Fimages\u002Fcase-studies\u002Fnbr\u002Fsocial.jpg\\\" alt=\\\"Heat Map and Bar Chart of Social Indicators\\\"\u003E\\n    \u003C\u002Fdiv\u003E\\n\u003C\u002Fdiv\u003E\\n\\n\\n\"}"}</script>
 </div>
 
 		<script src="//use.typekit.net/bgd7tvd.js"></script>
