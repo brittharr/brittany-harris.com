@@ -1,9 +1,10 @@
-const sveltePreprocess = require('svelte-preprocess');
-const staticAdaptor = require('@sveltejs/adapter-static');
-const pkg = require('./package.json');
-const fs = require('fs');
+import sveltePreprocess from 'svelte-preprocess';
+import staticAdaptor from '@sveltejs/adapter-static';
+import fs from 'fs';
 
-const pages = [
+const pkg = JSON.parse(fs.readFileSync('./package.json'));
+
+const entries = [
 	'*',
 	'/404-hack.html',
 	fs.readdirSync('_projects').map((filename) => `/projects/${filename.replace('.md', '')}`),
@@ -11,7 +12,7 @@ const pages = [
 ].flat();
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {
+export default {
 	preprocess: sveltePreprocess({
 		scss: {
 			includePaths: ['src/css', 'node_modules/foundation-sites/scss'],
@@ -28,7 +29,7 @@ module.exports = {
 
 		prerender: {
 			crawl: true,
-			pages
+			entries
 		},
 
 		target: '#svelte',

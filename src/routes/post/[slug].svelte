@@ -19,7 +19,7 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={formatDescription(description)} />
-	<link rel="canonical" href="{url}{$page.path}" />
+	<link rel="canonical" href="{url}{$page.url.pathname}" />
 </svelte:head>
 
 <div class="post">

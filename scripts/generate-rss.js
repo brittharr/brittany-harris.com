@@ -40,10 +40,10 @@ try {
 
 const formatPubdate = (date) => date.toUTCString(); // FIXME RFC822
 const permalink = ({ date, slug }) =>
-	`/blog/${date.getFullYear()}/${date
-		.getMonth()
+	`/blog/${date.getFullYear()}/${date.getMonth().toString().padStart(2, '0')}/${date
+		.getDate()
 		.toString()
-		.padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${slug}/`;
+		.padStart(2, '0')}/${slug}/`;
 
 const rss = `
 <?xml version="1.0" encoding="UTF-8" ?>

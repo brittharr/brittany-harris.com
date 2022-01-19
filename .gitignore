@@ -3,7 +3,7 @@ _site
 _drafts
 node_modules
 .DS_Store
-/.svelte
+/.svelte-kit
 /build
 /functions
 .reports-*
