@@ -19,7 +19,8 @@
 				"unsized-images": "warn",
 				"uses-rel-preconnect": "warn",
 				"uses-optimized-images": "warn",
-				"uses-responsive-images": "warn"
+				"uses-responsive-images": "warn",
+				"efficient-animated-content": "warn"
 			}
 		}
 	},

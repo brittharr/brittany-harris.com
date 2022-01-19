@@ -2,8 +2,8 @@
 	/**
 	 * @type {import('@sveltejs/kit).Load}
 	 */
-	export async function load({ page, fetch }) {
-		const url = `/api/projects/${page.params.slug}.json`;
+	export async function load({ params, fetch }) {
+		const url = `/api/projects/${params.slug}.json`;
 		const res = await fetch(url);
 
 		if (res.ok) {
@@ -33,7 +33,7 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={formatDescription(description)} />
-	<link rel="canonical" href="{url}{$page.path}" />
+	<link rel="canonical" href="{url}{$page.url.pathname}" />
 </svelte:head>
 
 <div class="grid-x grid-margin-x">

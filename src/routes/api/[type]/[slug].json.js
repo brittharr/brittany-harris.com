@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import frontmatter from '@github-docs/frontmatter';
-import marked from 'marked';
+import { marked } from 'marked';
 import { description } from '$lib/constants';
 
 /**
